@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Peliculas</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/prueba.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#"></a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#tema4">Inicio</a></li>
+            <li><a href="#tema3">Conozcanos</a></li>
+            <li data-toggle="modal" data-target="#modalLog-in"><a href="#tema2">Iniciar Sesión</a></li>
+            <li data-toggle="modal" data-target="#modalSign-up"><a href="#tema1">Regístrate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal Iniciar Sesión-->
+    <div class="modal fade" id="modalLog-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content loginBackground">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-user thumbnail" id="exampleModalLabel"><i class="fa fa-user-circle fa-5x" aria-hidden="true"></i></div>
+          </div>
+          <div class="modal-body">
+            <form class="text-center login">
+              <div class="form-group has-success has-feedback">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="email" aria-describedby="inputGroupSuccess1Status" placeholder="Username">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+              </div>
+              <div class="form-group has-success has-feedback">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="password" aria-describedby="inputGroupSuccess1Status" placeholder="Password">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+              </div>
+              <button type="button" class="btn btn-defaut" id="btn-login">LOG-IN</button>
+              <p class="recoverPassword">Forgot password? <a href="#">Click Here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Registro-->
+    <div class="modal fade" id="modalSign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content registry text-center modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <button type="button" class="btn btn-light btnLogin text-center" data-toggle="modal">Ya tienes una cuenta?</button>
+          <p class="text-center">O CREA UNA CUENTA NUEVA</p>
+
+          <div class="modal-body">
+            <form>
+              <input class="form-control" type="text" placeholder="Nombre Usuario">
+              <input class="form-control" id="signUpEmail" type="text" placeholder="Correo Electronico">
+              <input class="form-control" id="signUpPass" type="text" placeholder="Contraseña">
+              <button type="button" class="btn btn-info" id="btn-singUp">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+  	<div class="container">
+  		<h3>welcome to our movie api project</h3>
+  		<img src="assets/images/prueba.webp" alt="">
+  		<hr>
+  		<button class="btn btn-defaut">Click me to generate a new movie</button>
+  	</div>
+  </section>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- para utilizar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="assets/js/movie.js"></script>
+</body>
+</html>
+
