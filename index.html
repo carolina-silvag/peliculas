@@ -60,7 +60,7 @@
                 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                 <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
               </div>
-              <button type="button" class="btn btn-defaut" id="btn-login">LOG-IN</button>
+              <button type="button" class="btn btn-defaut" id="btnLogin">LOG-IN</button>
               <p class="recoverPassword">Forgot password? <a href="#">Click Here</a></p>
             </form>
           </div>
@@ -75,7 +75,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <button type="button" class="btn btn-light btnLogin text-center" data-toggle="modal">Ya tienes una cuenta?</button>
+          <button type="button" id="btnVolverLogin" class="btn btn-light btnLogin text-center" data-toggle="modal" data-target="#modalLog-in">Ya tienes una cuenta?</button>
           <p class="text-center">O CREA UNA CUENTA NUEVA</p>
 
           <div class="modal-body">
@@ -83,7 +83,7 @@
               <input class="form-control" type="text" placeholder="Nombre Usuario">
               <input class="form-control" id="signUpEmail" type="text" placeholder="Correo Electronico">
               <input class="form-control" id="signUpPass" type="text" placeholder="Contraseña">
-              <button type="button" class="btn btn-info" id="btn-singUp">ENVIAR</button>
+              <button type="button" class="btn btn-info" id="btnSingUp">ENVIAR</button>
             </form>
           </div>
         </div>
@@ -161,8 +161,8 @@
              <button class="hidden-lg hidden-md" type="button">Descarga el app</button>
              <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
             <p class="line"> O ingresa con </p>
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
     <div class="col-md-4 col-md-offset-2 text-center">
@@ -170,8 +170,8 @@
           <h2 class="title"><br>POR QUE LO QUE MÁS AMAMOS SON LAS PELÍCULAS</h2>
           <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>iniciar sesion</strong></button>
           <p class="line"> O ingresa con </p>
-          <i class="fa fa-facebook-official" id="icoFacebook" aria-hidden="true" href=""></i>
-          <i class="fa fa-google" id="icoGoogle" aria-hidden="true" href=""></i>
+          <a href="#"><i class="fa fa-facebook-official fa-2x" id="icoFacebook" aria-hidden="true" href=""></i></a>
+          <a href="#"><i class="fa fa-google fa-2x" id="icoGoogle" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>

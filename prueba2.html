@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Peliculas</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#"></a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#tema3">Inicio</a></li>
+            <li data-toggle="modal" data-target="#modalLog-in"><a href="#tema2">Iniciar Sesión</a></li>
+            <li data-toggle="modal" data-target="#modalSign-up"><a href="#tema1">Regístrate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal Iniciar Sesión-->
+    <div class="modal fade" id="modalLog-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content loginBackground">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-user thumbnail" id="exampleModalLabel"><i class="fa fa-user-circle fa-5x" aria-hidden="true"></i></div>
+          </div>
+          <div class="modal-body">
+            <form class="text-center login">
+              <div class="form-group has-success has-feedback">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="email" aria-describedby="inputGroupSuccess1Status" placeholder="Username">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+              </div>
+              <div class="form-group has-success has-feedback">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="password" aria-describedby="inputGroupSuccess1Status" placeholder="Password">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+              </div>
+              <button type="button" class="btn btn-defaut" id="btnLogin">LOG-IN</button>
+              <p class="recoverPassword">Forgot password? <a href="#">Click Here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Registro-->
+    <div class="modal fade" id="modalSign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content registry text-center modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <button type="button" class="btn btn-light btnLogin text-center" data-toggle="modal">Ya tienes una cuenta?</button>
+          <p class="text-center">O CREA UNA CUENTA NUEVA</p>
+
+          <div class="modal-body">
+            <form>
+              <input class="form-control" id="userName" type="text" placeholder="Nombre Usuario">
+              <input class="form-control" id="signUpEmail" type="text" placeholder="Correo Electronico">
+              <input class="form-control" id="signUpPass" type="password" placeholder="Contraseña">
+              <button type="button" class="btn btn-info" id="btnSingUp">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="assets/images/avengers.jpg" alt="..." class="img-responsive">
+          <div class="carousel-caption" text-align: "center">
+            <h1>Los Vengadores</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/images/harry-potter1.jpg" alt="..." class="img-responsive">
+          <div class="carousel-caption">
+            <h1>Harry Potter</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/images/star-wars.jpg" alt="..."  class="img-responsive">
+          <div class="carousel-caption">
+            <h1>Star Wars</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/images/the-hunger-games.jpg" alt="..." class="img-responsive">
+          <div class="carousel-caption">
+            <h1>Los juegos del hambre</h1>
+           </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/images/x-men1.jpg" alt="..."  class="img-responsive">
+          <div class="carousel-caption">
+            <h1>X-men</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="row container slogan"><a name="tema3"></a>
+      <div class="col-md-4 col-md-offset-2 text-center">
+        <div class="container-fluid registry">
+            <h2 class="hidden-xs" class="title"><br>TU SAGA COMPLETA<br>Únete a cinéfilos de película!!!</h2>
+            <h2 class="hidden-lg hidden-md" class="title"> <br>SAGAS PRIMIUN EN UN SÓLO LUGAR</h2>
+             <button class="hidden-lg hidden-md" type="button">Descarga el app</button>
+             <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
+            <p class="line"> O ingresa con </p>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    <div class="col-md-4 col-md-offset-2 text-center">
+      <div class="container-fluid registry">
+          <h2 class="title"><br>POR QUE LO QUE MÁS AMAMOS SON LAS PELÍCULAS</h2>
+          <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>iniciar sesion</strong></button>
+          <p class="line"> O ingresa con </p>
+          <i class="fa fa-facebook-official" id="icoFacebook" aria-hidden="true" href=""></i>
+          <i class="fa fa-google" id="icoGoogle" aria-hidden="true" href=""></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="backgroundFooter container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="footer">Copyright©Your Website 2017</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- para utilizar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

@@ -1,41 +1,32 @@
-[debug] [2018-01-05T17:29:02.462Z] ----------------------------------------------------------------------
-[debug] [2018-01-05T17:29:02.472Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-01-05T17:29:02.475Z] CLI Version:   3.16.0
-[debug] [2018-01-05T17:29:02.475Z] Platform:      win32
-[debug] [2018-01-05T17:29:02.475Z] Node Version:  v6.11.3
-[debug] [2018-01-05T17:29:02.477Z] Time:          Fri Jan 05 2018 14:29:02 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:02.477Z] ----------------------------------------------------------------------
+[debug] [2018-01-10T04:24:21.361Z] ----------------------------------------------------------------------
+[debug] [2018-01-10T04:24:21.361Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carolina\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-10T04:24:21.361Z] CLI Version:   3.16.0
+[debug] [2018-01-10T04:24:21.361Z] Platform:      win32
+[debug] [2018-01-10T04:24:21.361Z] Node Version:  v8.9.4
+[debug] [2018-01-10T04:24:21.361Z] Time:          Wed Jan 10 2018 01:24:21 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T04:24:21.361Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-01-05T17:29:02.530Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-01-05T17:29:02.532Z] > authorizing via signed-in user
-[debug] [2018-01-05T17:29:02.540Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-01-05T17:29:02.540Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/_wRLlv8Gtfug2vG2sMzJRM0ufaFLVHFTfaj1c-ucp8I',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri Jan 05 2018 14:29:02 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:02.950Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-05T17:29:03.015Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mi-red-social-1515006266015  
+[debug] [2018-01-10T04:24:21.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-10T04:24:21.377Z] > authorizing via signed-in user
+[debug] [2018-01-10T04:24:21.377Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/peliculas-999a3  
   
- Fri Jan 05 2018 14:29:03 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:03.910Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-05T17:29:03.912Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mi-red-social-1515006266015/tokens  
+ Wed Jan 10 2018 01:24:21 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T04:24:22.589Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T04:24:22.589Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/peliculas-999a3/tokens  
   
- Fri Jan 05 2018 14:29:03 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:04.852Z] <<< HTTP RESPONSE 200
+ Wed Jan 10 2018 01:24:22 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T04:24:23.433Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Admin\Desktop\redSocial'...
+[info] === Serving from 'C:\Users\Carolina\Desktop\peliculas'...
 [info] 
-[debug] [2018-01-05T17:29:04.862Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mi-red-social-1515006266015  
+[debug] [2018-01-10T04:24:23.433Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/peliculas-999a3  
   
- Fri Jan 05 2018 14:29:04 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:05.952Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-05T17:29:05.955Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/120754645224/clients/_:getWebAppConfig  
+ Wed Jan 10 2018 01:24:23 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T04:24:24.387Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T04:24:24.402Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918922040142/clients/_:getWebAppConfig  
   
- Fri Jan 05 2018 14:29:05 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-05T17:29:07.100Z] <<< HTTP RESPONSE 200
+ Wed Jan 10 2018 01:24:24 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T04:24:25.444Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] +  hosting: Local server: http://localhost:5000
 
