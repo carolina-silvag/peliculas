@@ -1,1 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+ background-color:#000;
+ font-family: 'Crafty Girls', cursive;
+}
+p {
+  text-align: justify;
+}
+.nav{
+
+}
+/*carousel*/
+.carousel-inner img {
+  width: 100%;
+  background-position: center center;
+  background-repeat: non-repeat;
+  background-size: cover;
+}
+
+.carousel-inner {
+ height: 85vh;
+ margin-top: 10px;
+}
+/*registry*/
+.registry{
+background-image: url(../images/fondo1.jpg);
+background-position: center center;
+background-repeat: non-repeat;
+background-size: cover;
+border-radius: 10%;
+}
+
+.btnRegistry{
+ background-color:#4285f4;
+}
+
+.slogan{
+ padding-top: 50px;
+}
+
+.footer {
+  text-align: center;
+  margin: 2%;
+}

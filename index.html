@@ -24,8 +24,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li ><a href="#tema4">Inicio</a></li>
-            <li><a href="#tema3">Conozcanos</a></li>
+            <li ><a href="#tema3">Inicio</a></li>
             <li data-toggle="modal" data-target="#modalLog-in"><a href="#tema2">Iniciar Sesión</a></li>
             <li data-toggle="modal" data-target="#modalSign-up"><a href="#tema1">Regístrate</a></li>
           </ul>
@@ -99,35 +98,43 @@
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="assets/img/lastarria.jpg" alt="..." class="img-responsive">
-          <div class="carousel-caption">
-            <h1>Barrio Lastarria</h1>
+          <img src="assets/images/avengers.jpg" alt="..." class="img-responsive">
+          <div class="carousel-caption" text-align: "center">
+            <h1>Los Vengadores</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/img/sancristobal1.jpg" alt="..." class="img-responsive">
+          <img src="assets/images/harry-potter1.jpg" alt="..." class="img-responsive">
           <div class="carousel-caption">
-            <h1>Cerro San Cristobal</h1>
+            <h1>Harry Potter</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/img/bellavista.jpg" alt="..." class="img-responsive">
+          <img src="assets/images/star-wars.jpg" alt="..."  class="img-responsive">
           <div class="carousel-caption">
-            <h1>Barrio Bellavista</h1>
+            <h1>Star Wars</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/images/the-hunger-games.jpg" alt="..." class="img-responsive">
+          <div class="carousel-caption">
+            <h1>Los juegos del hambre</h1>
            </div>
         </div>
 
         <div class="item">
-          <img src="assets/img/stgo-mil.jpg" alt="..."  class="img-responsive">
+          <img src="assets/images/x-men1.jpg" alt="..."  class="img-responsive">
           <div class="carousel-caption">
-            <h1>La Moneda</h1>
+            <h1>X-men</h1>
           </div>
         </div>
       </div>
@@ -144,31 +151,32 @@
       </a>
     </div>
   </section>
-  <section class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="">
-          <img src="assets/img/lachascona.jpg" alt="" class="img-responsive">
-          <h3>titulo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis alias provident minus delectus, aliquid laboriosam facere praesentium sint quidem rem impedit sit asperiores ea blanditiis neque soluta odio consectetur fugit.</p>
+
+  <section>
+    <div class="row container slogan"><a name="tema3"></a>
+      <div class="col-md-4 col-md-offset-2 text-center">
+        <div class="container-fluid registry">
+            <h2 class="hidden-xs" class="title"><br>TU SAGA COMPLETA<br>Únete a cinéfilos de película!!!</h2>
+            <h2 class="hidden-lg hidden-md" class="title"> <br>SAGAS PRIMIUN EN UN SÓLO LUGAR</h2>
+             <button class="hidden-lg hidden-md" type="button">Descarga el app</button>
+             <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
+            <p class="line"> O ingresa con </p>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="">
-          <img src="assets/img/stgo-mil1.jpg" alt="" class="img-responsive">
-          <h3>titulo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, vero, accusamus excepturi ipsum sapiente laboriosam consectetur atque, et veniam rerum at explicabo culpa cupiditate reprehenderit odio, numquam voluptatem soluta.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="">
-          <img src="assets/img/quintanormal.jpg" alt="" class="img-responsive">
-          <h3>titulo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis recusandae tempora, optio fugit dignissimos itaque expedita dolorem ullam nobis, suscipit, ut hic facere. Cupiditate excepturi laudantium, minus voluptatum vel asperiores!</p>
-        </div>
+    <div class="col-md-4 col-md-offset-2 text-center">
+      <div class="container-fluid registry">
+          <h2 class="title"><br>POR QUE LO QUE MÁS AMAMOS SON LAS PELÍCULAS</h2>
+          <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>iniciar sesion</strong></button>
+          <p class="line"> O ingresa con </p>
+          <i class="fa fa-facebook-official" id="icoFacebook" aria-hidden="true" href=""></i>
+          <i class="fa fa-google" id="icoGoogle" aria-hidden="true" href=""></i>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <footer>
     <div class="backgroundFooter container-fluid">
       <div class="row">
