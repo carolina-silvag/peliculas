@@ -70,6 +70,7 @@ footer{
     color:#FFF;
     font-weight:800;
     font-size:30px;
+    width: 20%;
 }
 
 .adress span , .menu span{
@@ -109,3 +110,9 @@ footer{
     margin-right: 10px;
     font-size:14px;
 }
+
+/* .logo {
+ background-image: url(../images/sagafan-dark.png);
+ width: 10%;
+ z-index: 1;
+} */
