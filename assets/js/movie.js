@@ -1,7 +1,3 @@
-$(document).ready(() => {
-  this.database = firebase.database();
-  
-})
 
 var config = {
     apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
@@ -12,7 +8,23 @@ var config = {
     messagingSenderId: "918922040142"
   };
   firebase.initializeApp(config);
-  
+
+
+
+// Configura accesos directos a las características de Firebase e inicia la autenticación de base de firebase.
+  this.auth = firebase.auth();
+  this.database = firebase.database();
+  console.log(this.auth.currentUser);
+
+  this.storage = firebase.storage();
+  // this.store = firebase.storage();
+
+  /*this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));*/
+
+
+
+  var userPic = $('#user-pic').val();
+  var userName = $('#user-name').val();
   $('#btnSignOut').click(signOut);
 
   function signOut() {
