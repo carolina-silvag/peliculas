@@ -1,32 +1,50 @@
-[debug] [2018-01-10T04:24:21.361Z] ----------------------------------------------------------------------
-[debug] [2018-01-10T04:24:21.361Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carolina\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-01-10T04:24:21.361Z] CLI Version:   3.16.0
-[debug] [2018-01-10T04:24:21.361Z] Platform:      win32
-[debug] [2018-01-10T04:24:21.361Z] Node Version:  v8.9.4
-[debug] [2018-01-10T04:24:21.361Z] Time:          Wed Jan 10 2018 01:24:21 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-10T04:24:21.361Z] ----------------------------------------------------------------------
+[debug] [2018-01-10T18:07:54.931Z] ----------------------------------------------------------------------
+[debug] [2018-01-10T18:07:54.941Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-10T18:07:54.943Z] CLI Version:   3.16.0
+[debug] [2018-01-10T18:07:54.943Z] Platform:      win32
+[debug] [2018-01-10T18:07:54.943Z] Node Version:  v6.11.3
+[debug] [2018-01-10T18:07:54.945Z] Time:          Wed Jan 10 2018 15:07:54 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:07:54.945Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-01-10T04:24:21.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-01-10T04:24:21.377Z] > authorizing via signed-in user
-[debug] [2018-01-10T04:24:21.377Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/peliculas-999a3  
+[debug] [2018-01-10T18:07:54.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-10T18:07:54.987Z] > authorizing via signed-in user
+[debug] [2018-01-10T18:07:54.994Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-10T18:07:54.995Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/_wRLlv8Gtfug2vG2sMzJRM0ufaFLVHFTfaj1c-ucp8I',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jan 10 2018 15:07:54 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:07:55.669Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T18:07:55.744Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/peliculas-999a3  
   
- Wed Jan 10 2018 01:24:21 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-10T04:24:22.589Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T04:24:22.589Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/peliculas-999a3/tokens  
+ Wed Jan 10 2018 15:07:55 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:07:56.707Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T18:07:56.710Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/peliculas-999a3/tokens  
   
- Wed Jan 10 2018 01:24:22 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-10T04:24:23.433Z] <<< HTTP RESPONSE 200
+ Wed Jan 10 2018 15:07:56 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:07:57.452Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Carolina\Desktop\peliculas'...
+[info] === Serving from 'C:\Users\Admin\Desktop\plantilla'...
 [info] 
-[debug] [2018-01-10T04:24:23.433Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/peliculas-999a3  
+[debug] [2018-01-10T18:07:57.462Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/peliculas-999a3  
   
- Wed Jan 10 2018 01:24:23 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-10T04:24:24.387Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-10T04:24:24.402Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918922040142/clients/_:getWebAppConfig  
+ Wed Jan 10 2018 15:07:57 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:07:59.435Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T18:07:59.436Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918922040142/clients/_:getWebAppConfig  
   
- Wed Jan 10 2018 01:24:24 GMT-0300 (Hora verano Sudamérica Pacífico)
-[debug] [2018-01-10T04:24:25.444Z] <<< HTTP RESPONSE 200
+ Wed Jan 10 2018 15:07:59 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:08:00.114Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-01-10T18:08:00.355Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/peliculas-999a3  
+  
+ Wed Jan 10 2018 15:08:00 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:08:01.450Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-10T18:08:01.452Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918922040142/clients/_:getWebAppConfig  
+  
+ Wed Jan 10 2018 15:08:01 GMT-0300 (Hora verano Sudamérica Pacífico)
+[debug] [2018-01-10T18:08:02.586Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
-[info] +  hosting: Local server: http://localhost:5000
+[info] +  hosting: Local server: http://localhost:5004
 
