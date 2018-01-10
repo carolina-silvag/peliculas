@@ -171,13 +171,13 @@ function addUserBD(user, userName){
   });
 }
 
-function btnVolverLogin(){
+/*function btnVolverLogin(){
   console.log('no esta ocultando porque¡');
   $('#modalSign-up').css({'display': 'none'});
   $('#modalSign-up').removeClass('in');
   $('body').removeClass('modal-open');
   $('body').css({''});
-}
+}*/
 
 window.onload = function(){
   InicializarFire();
