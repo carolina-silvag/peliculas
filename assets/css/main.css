@@ -19,9 +19,9 @@ border-color: #008CBA;
  color: #FFF;
 }
 /*carousel*/
-.title h3{
+.subTitle{
  color: #FFF;
- text-align: center;
+ padding-bottom: 1%;
 }
 .carousel-inner img {
   width: 100%;
