@@ -1,28 +1,37 @@
 $(document).ready(() => {
-  var idMovie = []
-  $.ajax({
-    url: 'http://www.omdbapi.com/?i=tt3896198&apikey=9e7fd663',
-    /*data: {
-        apikey: '9e7fd663',
-        s: movie,
-        type : 'movie'
-    },*/
-  })
-  .done(function(data) {
-    console.log(data);
-    //for(var i = 0; i < data.Search.length; i++) {
-      /*console.log(data['Search'][i]['imdbID']);
-      idMovie.append(data['Search'][i]['imdbID']);*/
-      //$('#listMovie').append('<div class="listMovieAll"><a href="#"><img src="'+data['Search'][i]['Poster']+'" alt=""></a></div>')
-    //}
-  })
-  .fail(function(error) {
-    console.log(error);
-  });
-
+  this.database = firebase.database();
   
 })
 
+var config = {
+    apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
+    authDomain: "peliculas-999a3.firebaseapp.com",
+    databaseURL: "https://peliculas-999a3.firebaseio.com",
+    projectId: "peliculas-999a3",
+    storageBucket: "peliculas-999a3.appspot.com",
+    messagingSenderId: "918922040142"
+  };
+  firebase.initializeApp(config);
+  
+  $('#btnSignOut').click(signOut);
+
+  function signOut() {
+    var currentUser = this.auth.currentUser;
+
+  if (currentUser) {
+    var uid = currentUser.uid;
+    var name = currentUser.displayName;
+    var photoURL = currentUser.photoURL;
+    this.database.ref("/user/"+uid).set({
+      uid:uid,
+      name:name,
+      photoURL:photoURL,
+      online:false
+    });
+    this.auth.signOut();
+  }
+  window.location.href = 'index.html';
+  }
 
 /*buscar por titulo*/
 $('#btnSearch').click(search);
