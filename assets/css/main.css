@@ -17,7 +17,6 @@ p {
  color: #FFF;
  }
 
-
 /*css de modales registro y login*/
  .modal-content {
  background-color: #011D28;
@@ -138,13 +137,10 @@ footer {
 }
 .logo {
   width: 20%;
-  /*padding-bottom: 1%;*/ 
+  /*padding-bottom: 1%;*/
 }
 
 .navbar-brand {
   padding: 0;
-    
+
 }
-
-
-

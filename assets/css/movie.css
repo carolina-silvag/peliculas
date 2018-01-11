@@ -25,26 +25,38 @@ p {
 }
 .navbar-default {
   background-color: #011D28;
+  border-color: #011D28;
 
   }
   .navbar-default .navbar-nav>li>a{
   color: #FFF;
   font-size: 1.5em;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-   color: #FFF;
-   }
-.dropdown-menu{
- width:50%;
- background-color: #FFF;
-}
-menu:hover{
-  background-color: #337ab7;
+
+.open>a:hover {
+  background-color: #555;
+  }
+
+ menu:hover{
+  background-color: #ddd;
 }
 .film{
  padding-left: 30px;
 }
-
+/*search*/
+.control-label {
+ font-size: 2em;
+}
+.caret {
+  color: #FFF;
+  border-top: 20px dashed;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+.space {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 /*Estilo search*/
 #imaginary_container{
