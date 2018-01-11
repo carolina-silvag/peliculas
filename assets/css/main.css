@@ -4,73 +4,97 @@
 }
 
 body {
- background-color: #2D3E50;
- font-family: 'Oswald', sans-serif;
- font-size: 1.5em;
+  background-color: #252524;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+
 }
 p {
   text-align: justify;
 }
-.navbar-default{
-background-color: #008CBA;
-border-color: #008CBA;
-}
+/*Menu*/
+.navbar-default {
+  background-color: #011D28;
+  border-color: #011D28;
+  }
 .navbar-default .navbar-nav>li>a{
  color: #FFF;
-}
-/*carousel*/
-.subTitle{
+ }
+ .modal-content {
+ background-color: #011D28;
  color: #FFF;
- padding-bottom: 1%;
 }
-.carousel-inner img {
-  width: 100%;
+.modal-user {
+ background-color: #011D28;
+ color: #FFF;
+}
+.close {
+  color: #FFF;
+  font-size: 5em;
+}
+
+.btnLogin {
+  background-color: #22A1D3;
+}
+.btn-defaut {
+  background-color: #22A1D3;
+}
+
+/*slides*/
+.subTitle {
+ color: #FFF;
+ padding: 1% 1%;
+}
+.carousel img {
+  width: 250vh;
   background-position: center center;
-  background-repeat: non-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-
-.carousel-inner {
- height: 80vh;
- margin-top: 10px;
+.carousel-caption {
+ bottom: 50px;
 }
 /*registry*/
-.log-in{
- padding-top: 10em;
- padding-bottom: 10em;
+.entry {
+ padding-top: 7em;
+ padding-bottom: 7em;
 }
 
-.start{
- margin-top: -70px;
+.start {
+ margin-top: -130px;
+ color: #FFF;
+ text-align: center;
 }
 
-.user{
- background-color: #2D3E50;
- border: 0px solid #2D3E50;
+.user {
+ background-color: #252524;
+ border: 0px solid #252524;
 }
-
-.registry{
+.registry {
 margin-bottom: 20%;
 }
 
-.btnRegistry{
- background-color: #191970;
+.btnRegistry {
+ background-color: #22A1D3;
  font-size: 1.4em;
  margin: 10px;
  color: #FFF;
 }
 
 /*footer*/
-footer{
-     background-color: #000;
-     padding:30px 0px;
+footer {
+ background-color: #252524;
+ letter-spacing: .1em;
+ color: #FFF;
 }
 
-.logo{
-    color:#FFF;
-    font-weight:800;
-    font-size:30px;
-    width: 20%;
+.icons{
+  font-size: 2em;
+  margin-left: 20px;
+}
+.copyright {
+  background-color: #011D28;
+  padding-top: 30px;
 }
 
 .adress span , .menu span{
@@ -104,14 +128,8 @@ footer{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-
-.fa{
-    color: #da3e44;
-    margin-right: 10px;
-    font-size:14px;
-}
-
-/* .logo {
+/*
+.logo {
  background-image: url(../images/sagafan-dark.png);
  width: 10%;
  z-index: 1;
