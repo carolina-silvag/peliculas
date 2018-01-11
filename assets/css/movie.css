@@ -39,7 +39,6 @@ p {
 
  menu:hover{
   background-color: #ddd;
-
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
    color: #FFF;
@@ -76,8 +75,8 @@ p {
 }
 
 .stylish-input-group .form-control{
-  border-right:0; 
-  box-shadow:0 0 0; 
+  border-right:0;
+  box-shadow:0 0 0;
   border-color:#ccc;
 }
 .stylish-input-group button{
