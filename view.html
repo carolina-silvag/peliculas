@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Películas</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/view.css">
+</head>
+<body>
+  <nav class="navbar navbar-default nav">
+    <div class="container-fluid">
+      <!-- <div class="navbar-header"> -->
+        <a class="navbar-brand logo" href="#"></a>
+     <!--  </div> -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Mis Sagas</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="row">
+              <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
+              <div hidden id="user-name" class="col-md-8"></div>
+              <span class="caret"></span>
+            </div></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li id="btnSignOut"><a href="#">Sign-out</a></li>
+          </ul>
+        </li>
+      </ul>        
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <label class="control-label" for="searchinput">Búsqueda de películas</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <div class="form-group"> 
+            <div class="input-group stylish-input-group input-append">
+              <input type="text" class="form-control" id="search" placeholder="Título de película" >
+              <span class="input-group-addon">
+                <button type="submit" id="btnSearch">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>  
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer stylish-color-dark">
+      <!--Footer Links-->
+    <div class="container-fluid">
+      <hr>
+      <!--First column-->
+      <div class="row">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <!--Social buttons-->
+          <i class="fa fa-facebook icons" aria-hidden="true"></i>
+          <i class="fa fa-twitter icono icons" aria-hidden="true"></i>
+          <i class="fa fa-linkedin icons" aria-hidden="true"></i>
+          <i class="fa fa-apple icons" aria-hidden="true"></i>
+          <i class="fa fa-play icons" aria-hidden="true"></i>
+        </div>
+        <!--/.Social buttons-->
+        <!--/.First column-->
+        <!--Second column-->
+        <div class="col-md-6 col-lg-3 col-xs-6 mx-auto mt-3">
+          <p><a href="#!">Inicio</a></p>
+          <p><a href="#!">Acerca del sitio</a></p>
+          <p><a href="#!">Preguntas frecuentes</a></p>
+          <p><a href="#!">Terminos de uso</a></p>
+        </div>
+        <!--/.Second column-->
+        <div class=" hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+          <p><a href="#!">Contacto</a></p>
+          <p><a href="#!">Centro de ayuda</a></p>
+          <p><a href="#!">Privacidad</a></p>
+          <p><a href="#!">Cuenta</a></p>
+        </div>
+        <!--Third column-->
+        <div class=" hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+          <p><a href="#!">Formas de ver</a></p>
+          <p><a href="#!">Información corporativa</a></p>
+          <p><a href="#!">Cokies</a></p>
+        </div>
+      </div>
+      <!-- Footer links -->
+      <div class="row">
+      <!--Grid column-->
+        <div class="col-12 text-center row copyright">
+         <!--Copyright-->
+          <p class="text-center">© 2017 <a href="https://lms.laboratoria.la/cohorts/scl-2017-09-bc-core-pm/courses/social-network/01-css-frameworks/08-code-challenges">SAGAFAN</a> Todos los derechos reservados</p>
+         <!--/.Copyright-->
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- para utilizar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- API OMDb-->
+  <script src="http://www.omdbapi.com/?apikey=[yourkey]&"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

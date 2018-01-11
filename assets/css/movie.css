@@ -31,7 +31,6 @@ p {
 .navbar-default .navbar-nav>li>a{
   color: #FFF;
   font-size: 1.5em;
-<<<<<<< HEAD
   }
 
 .open>a:hover {
@@ -40,7 +39,7 @@ p {
 
  menu:hover{
   background-color: #ddd;
-=======
+
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
    color: #FFF;
@@ -49,10 +48,7 @@ p {
  width:50%;
  background-color: #FFF;
 }
-menu:hover{
-  background-color: #337ab7;
->>>>>>> 77cd34d1808c1eab03d6922d080383afad0eaf0c
-}
+
 .film{
  padding-left: 30px;
 }
@@ -73,19 +69,20 @@ menu:hover{
 
 /*Estilo search*/
 #imaginary_container{
-    margin-top:2%; /* Don't copy this */
+  margin-top:2%; /* Don't copy this */
 }
 .stylish-input-group .input-group-addon{
-    background: white !important;
+  background: white !important;
 }
+
 .stylish-input-group .form-control{
-    border-right:0;
-  box-shadow:0 0 0;
+  border-right:0; 
+  box-shadow:0 0 0; 
   border-color:#ccc;
 }
 .stylish-input-group button{
-    border:0;
-    background:transparent;
+  border:0;
+  background:transparent;
 }
 
 /*Fin estilo search*/
