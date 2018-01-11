@@ -27,10 +27,11 @@ p {
   background-color: #011D28;
   border-color: #011D28;
 
-  }
-  .navbar-default .navbar-nav>li>a{
+}
+.navbar-default .navbar-nav>li>a{
   color: #FFF;
   font-size: 1.5em;
+<<<<<<< HEAD
   }
 
 .open>a:hover {
@@ -39,6 +40,18 @@ p {
 
  menu:hover{
   background-color: #ddd;
+=======
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+   color: #FFF;
+}
+.dropdown-menu{
+ width:50%;
+ background-color: #FFF;
+}
+menu:hover{
+  background-color: #337ab7;
+>>>>>>> 77cd34d1808c1eab03d6922d080383afad0eaf0c
 }
 .film{
  padding-left: 30px;
