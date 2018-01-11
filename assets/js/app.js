@@ -166,7 +166,7 @@ function addUserBD(user, userName){
   database.ref("/user/"+uid).set({
     uid:uid,
     name:userName,
-    // photoURL:photoURL,
+    photoURL:'assets/images/imgUser.png',
     online:true
   });
 }
