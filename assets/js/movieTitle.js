@@ -18,7 +18,7 @@ auth.onAuthStateChanged(function(user) {
     loadCurrentUser(user.uid);
   } else {
     // No usuario logueado.
-    window.location.href = 'index.html';
+    /*window.location.href = 'index.html';*/
   }
 });
 
@@ -39,7 +39,7 @@ function loadCurrentUser(uid) {
 }
 
 
-  $('#btnSignOut').click(signOut);
+$('#btnSignOut').click(signOut);
 
 function signOut() {
   currentUser;
@@ -61,6 +61,7 @@ function signOut() {
   window.location.href = 'index.html';
 }
 
+/*informacion desde movie.html */
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
     if (results==null){
@@ -81,6 +82,8 @@ function search() {
 var movie = $.urlParam('search');
 setSearchMovie(movie);
 
+
+var cols = 0;
 /*cargando peliculas encontradas*/
 function setSearchMovie(movie) {
   console.log('generando peticion para ', movie);
@@ -94,13 +97,75 @@ function setSearchMovie(movie) {
   })
   .done(function(data) {
     console.log(data);
+    // Se limipia la lista de fotos
+    $('#listMovie').html("");
+    cols = 0;
     for(var i = 0; i < data.Search.length; i++) {
-      console.log(data['Search'][i]['Poster']);
-      $('#listMovie').append('<div class="listMovieAll"><a href="#"><img src="'+data['Search'][i]['Poster']+'" alt=""></a></div>')
+      var imgMovie = data['Search'][i]['Poster']
+      var nameMovie = data['Search'][i]['Title']
+      createElement(imgMovie, nameMovie, i + 1);
+      /*$('#listMovie').append('<div class="listMovieAll"><a href="#"><img src="'+data['Search'][i]['Poster']+'" alt=""></a></div>')*/
     }
   })
   .fail(function(error) {
     console.log(error);
   });
     
+}
+
+function createElement(imgMovie, nameMovie, index) {
+  console.log(imgMovie, nameMovie, index);
+    if (cols == 0) {
+      $("#listMovie").append('<div class="row listMovie"></div>');
+    }
+
+    var urlImage = imgMovie
+    var name = nameMovie;
+    /*var direccion = place.vicinity;
+    var local = place.location;*/
+
+    $("#listMovie .row").last().append('<div class="portafolio col-xs-3 imgcont"><div class="portafolio-contenedor img-'+index+' imgContenedor data-toggle="modal" data-target="#modalLocal""></div></div>');
+    $('.img-'+index).css({'background-image': 'url('+urlImage+')', 'height': '20em', 'background-repeat': 'no-repeat', 'background-position': 'center center'});
+    $('.img-'+index).last().append('<span class="nameList text-center"><strong>'+name+'</strong></span>');
+    $('.img-'+index+' span').hide();
+      $('.btnClose').click(function(event) {
+      $('.name').last().html('');
+      $('.direccion').last().html('');
+      });
+   /* $('.img-'+index).click(function(event) {
+      console.log(place.name, place.photos, place.geometry.location);
+      $('#modalLocal').modal('show');
+      $('.name').last().append(name);
+      $('.direccion').last().append('<span>'+direccion+'</span>')
+      console.log(name);
+      map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: place.geometry.location,
+        zoom: 16
+      });*/
+
+      /*map2.setCenter(place.geometry.location);*/
+
+      /*var marker = new google.maps.Marker({
+        map: map2,
+        position: place.geometry.location,
+        //icon: image
+      });
+      
+    });*/
+    $('.img-'+index).mouseover(function(event) {
+      $('.img-'+index).css({'opacity': '0.6'})
+      $('.img-'+index+' span').show();
+    });
+    $('.img-'+index).mouseleave(function(event) {
+      $('.img-'+index).css({'opacity': '1'})
+      $('.img-'+index+' span').hide();
+    });
+
+
+    cols++;
+
+    if (cols == 4) {
+      cols = 0;
+    }
+  
 }
