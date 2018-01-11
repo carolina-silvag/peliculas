@@ -19,7 +19,7 @@ auth.onAuthStateChanged(function(user) {
     loadCurrentUser(user.uid);
   } else {
     // No usuario logueado.
-    window.location.href = 'index.html';
+    /*window.location.href = 'index.html';*/
   }
 });
 
@@ -85,7 +85,7 @@ $('.multi-item-carousel').carousel({
     next = $(this).siblings(':first');
   }
   next.children(':first-child').clone().appendTo($(this));
-  
+
   if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
   } else {
@@ -99,10 +99,10 @@ $('.multi-item-carousel .item').each(function(){
     next = $(this).siblings(':first');
   }
   next.children(':first-child').clone().appendTo($(this));
-  
+
   if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
-    
+
     if (next.next().next().length > 0) {
           next.next().next().children(':first-child').clone().appendTo($(this));
      } else {
@@ -111,5 +111,5 @@ $('.multi-item-carousel .item').each(function(){
   } else {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
-  
+
 });
