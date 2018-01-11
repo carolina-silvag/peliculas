@@ -65,7 +65,7 @@ function signOut() {
 /*buscar por titulo*/
 $('#btnSearch').click(search);
 function search() {
-  
+  window.location.href = 'found.html?search='+$('#search').val();
 }
 
 
@@ -76,9 +76,10 @@ $('.multi-item-carousel').carousel({
   interval: false
 });
 
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
+
+// para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
+// Haz lo mismo para el próximo, siguiente artículo.
+/*$('.multi-item-carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
@@ -90,4 +91,25 @@ $('.multi-item-carousel .item').each(function(){
   } else {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
+});*/
+
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+    
+    if (next.next().next().length > 0) {
+          next.next().next().children(':first-child').clone().appendTo($(this));
+     } else {
+       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+     }
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+  
 });
