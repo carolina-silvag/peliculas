@@ -1,13 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #252524;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+
+}
+p {
+  text-align: justify;
+}
+/*logo*/
+
+.logo {
+  width: 40%;
+  /*padding-bottom: 1%;*/
+}
+
+.navbar-brand {
+    padding: 0;
+}
+.navbar-default {
+  background-color: #011D28;
+
+  }
+  .navbar-default .navbar-nav>li>a{
+  color: #FFF;
+  font-size: 1.5em;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+   color: #FFF;
+   }
+.dropdown-menu{
+ width:50%;
+ background-color: #FFF;
+}
+menu:hover{
+  background-color: #337ab7;
+}
+.film{
+ padding-left: 30px;
+}
+
+
 /*Estilo search*/
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
 }
 .stylish-input-group .input-group-addon{
-    background: white !important; 
+    background: white !important;
 }
 .stylish-input-group .form-control{
-    border-right:0; 
-  box-shadow:0 0 0; 
+    border-right:0;
+  box-shadow:0 0 0;
   border-color:#ccc;
 }
 .stylish-input-group button{
@@ -77,3 +125,17 @@ h1{
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
 }
 /*hasta aqui termina carrusel*/
+/*footer*/
+footer {
+ background-color: #252524;
+ letter-spacing: .1em;
+ color: #FFF;
+}
+.icons{
+  font-size: 2em;
+  margin-left: 20px;
+}
+.copyright {
+  background-color: #011D28;
+  padding-top: 30px;
+}

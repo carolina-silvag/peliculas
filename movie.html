@@ -7,12 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/movie.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-default nav">
     <div class="container-fluid">
       <!-- <div class="navbar-header"> -->
-        <a class="navbar-brand logo" href="#"></a>
+        <a class="navbar-brand logo" href="#"><img class="logo img img-responsive" src="assets/images/sagafan-dark.png" alt=""></a>
      <!--  </div> -->
 
       <ul class="nav navbar-nav navbar-right">
@@ -29,7 +30,7 @@
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
-            <li id="btnSignOut"><a href="#">Sign-out</a></li>
+            <li id="btnSignOut" class="btnmenu"><a href="#">Sign-out</a></li>
           </ul>
         </li>
       </ul>
@@ -66,7 +67,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <h4>Terror</h4>
+        <h2><a href="#!" class="film">Terror</a></h2>
           <div class="container-fluid">
             <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
             <div class="row">
@@ -86,16 +87,16 @@
                       <div class="col-xs-3"><a href="#1"><img src="assets/images/viernes.jpg" class="img-responsive"></a></div>
                     </div>
                     <div class="item">
-                      <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+                      <div class="col-xs-3"><a href="#1"><img src="assets/images/elaro.jpg" class="img-responsive"></a></div>
                     </div>
                     <div class="item">
-                      <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                      <div class="col-xs-3"><a href="#1"><img src="assets/images/annabella.jpg" class="img-responsive"></a></div>
                     </div>
                     <!-- add  more items here -->
                     <!-- Example item start:  -->
 
                     <div class="item">
-                      <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                      <div class="col-xs-3"><a href="#1"><img src="assets/images/chuky.jpg" class="img-responsive"></a></div>
                     </div>
 
                     <!--  Example item end -->
@@ -110,7 +111,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <h4>Ciencia ficción y fantasía</h4>
+         <h2><a href="#!" class="film">Ciencia ficcción y fantasia</a></h2>
           <div class="container-fluid">
             <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
             <div class="row">
@@ -155,7 +156,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <h4>Comedia</h4>
+         <h2><a href="#!" class="film">Comedia</a></h2>
           <div class="container-fluid">
             <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
             <div class="row">
@@ -199,7 +200,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <h4>Acción</h4>
+         <h2><a href="#!" class="film">Acción</a></h2>
           <div class="container-fluid">
             <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
             <div class="row">
@@ -242,7 +243,58 @@
         </div>
       </div>
   </section>
-
+  <!--Footer-->
+  <footer class="page-footer stylish-color-dark">
+      <!--Footer Links-->
+    <div class="container-fluid">
+      <hr>
+              <!--First column-->
+              <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <!--Social buttons-->
+                <i class="fa fa-facebook icons" aria-hidden="true"></i>
+                <i class="fa fa-twitter icono icons" aria-hidden="true"></i>
+                <i class="fa fa-linkedin icons" aria-hidden="true"></i>
+                <i class="fa fa-apple icons" aria-hidden="true"></i>
+                <i class="fa fa-play icons" aria-hidden="true"></i>
+                </div>
+              <!--/.Social buttons-->
+              <!--/.First column-->
+              <!--Second column-->
+              <div class="col-md-6 col-lg-3 col-xs-6 mx-auto mt-3">
+                  <p><a href="#!">Inicio</a></p>
+                  <p><a href="#!">Acerca del sitio</a></p>
+                  <p><a href="#!">Preguntas frecuentes</a></p>
+                  <p><a href="#!">Terminos de uso</a></p>
+              </div>
+              <!--/.Second column-->
+              <div class=" hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                  <p><a href="#!">Contacto</a></p>
+                  <p><a href="#!">Centro de ayuda</a></p>
+                  <p><a href="#!">Privacidad</a></p>
+                  <p><a href="#!">Cuenta</a></p>
+              </div>
+              <!--Third column-->
+                <div class=" hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                  <p><a href="#!">Formas de ver</a></p>
+                  <p><a href="#!">Información corporativa</a></p>
+                  <p><a href="#!">Cokies</a></p>
+              </div>
+          </div>
+          <!-- Footer links -->
+            <div class="row">
+            <!--Grid column-->
+              <div class="col-12 text-center row copyright">
+               <!--Copyright-->
+                <p class="text-center">© 2017 <a href="https://lms.laboratoria.la/cohorts/scl-2017-09-bc-core-pm/courses/social-network/01-css-frameworks/08-code-challenges">SAGAFAN</a> Todos los derechos reservados</p>
+               <!--/.Copyright-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+            </div>
+         </div>
+     </footer>
+  <!--/.Footer-->
 	<script src="assets/js/jquery-3.2.1.min.js"></script>
  	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
  	<!-- para utilizar firebase -->
