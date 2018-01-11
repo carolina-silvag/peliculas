@@ -7,6 +7,10 @@
     padding: 0;
     float: none;
   }
+  .imgSaga {
+    max-width: 100% !important;
+    height: 70vh !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -16,5 +20,9 @@
   .navbar-brand {
     padding: 0;
     float: none;
+  }
+  .imgSaga {
+    max-width: 100% !important;
+    height: 70vh !important;
   }
 }

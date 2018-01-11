@@ -37,8 +37,9 @@ p {
   background-color: #555;
   }
 
- menu:hover{
+menu:hover{
   background-color: #ddd;
+
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
    color: #FFF;
@@ -68,20 +69,19 @@ p {
 
 /*Estilo search*/
 #imaginary_container{
-  margin-top:2%; /* Don't copy this */
+    margin-top:2%; /* Don't copy this */
 }
 .stylish-input-group .input-group-addon{
-  background: white !important;
+    background: white !important;
 }
-
 .stylish-input-group .form-control{
-  border-right:0;
+    border-right:0;
   box-shadow:0 0 0;
   border-color:#ccc;
 }
 .stylish-input-group button{
-  border:0;
-  background:transparent;
+    border:0;
+    background:transparent;
 }
 
 /*Fin estilo search*/

@@ -47,16 +47,20 @@ p {
     background: transparent;
 }
 /*slides*/
+.imgSaga {
+  width: 100% !important;
+  height: 100vh !important;
+}
 .subTitle {
  color: #FFF;
  padding: 1% 1%;
 }
-.carousel img {
+/*.carousel img {
   width: 250vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 .carousel-caption {
  bottom: 50px;
 }
@@ -65,6 +69,9 @@ p {
  border: 0px solid #252524;
 }
 /*registry*/
+.creaCuenta,.datosRegistro, .btnEviarRegistro {
+  margin-top: 3%;
+}
 .registry {
 margin-bottom: 20%;
 }
