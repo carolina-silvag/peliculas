@@ -19,7 +19,7 @@ auth.onAuthStateChanged(function(user) {
     loadCurrentUser(user.uid);
   } else {
     // No usuario logueado.
-   window.location.href = 'index.html';
+   //window.location.href = 'index.html';
   }
 });
 
