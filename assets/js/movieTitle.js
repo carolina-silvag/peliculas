@@ -84,6 +84,7 @@ setSearchMovie(movie);
 
 
 var cols = 0;
+var idMovie = [];
 /*cargando peliculas encontradas*/
 function setSearchMovie(movie) {
   console.log('generando peticion para ', movie);
@@ -100,11 +101,16 @@ function setSearchMovie(movie) {
     // Se limipia la lista de fotos
     $('#listMovie').html("");
     cols = 0;
-    for(var i = 0; i < data.Search.length; i++) {
-      var imgMovie = data['Search'][i]['Poster']
-      var nameMovie = data['Search'][i]['Title']
-      createElement(imgMovie, nameMovie, i + 1);
-      /*$('#listMovie').append('<div class="listMovieAll"><a href="#"><img src="'+data['Search'][i]['Poster']+'" alt=""></a></div>')*/
+    if (data.Response != "False") {
+      for(var i = 0; i < data.Search.length; i++) {
+        var imgMovie = data['Search'][i]['Poster'];
+        var nameMovie = data['Search'][i]['Title'];
+        var id = data['Search'][i]['imdbID'];
+        if(imgMovie != "N/A") {
+          createElement(imgMovie, nameMovie, i + 1, id);  
+        }
+        /*$('#listMovie').append('<div class="listMovieAll"><a href="#"><img src="'+data['Search'][i]['Poster']+'" alt=""></a></div>')*/
+      }
     }
   })
   .fail(function(error) {
@@ -113,7 +119,72 @@ function setSearchMovie(movie) {
     
 }
 
-function createElement(imgMovie, nameMovie, index) {
+/*filtro por año mas titulo*/
+function setFiltreMovie(movie, year) {
+  iIndex = 0;
+  console.log('generando peticion para ', movie);
+  $.ajax({
+    url: 'http://www.omdbapi.com',
+    data: {
+        apikey: '9e7fd663',
+        s: movie,
+        type : 'movie',
+        y: year
+    },
+  })
+  .done(function(data) {
+    console.log(data);
+    // Se limipia la lista de fotos
+    $('#listMovie').html("");
+    cols = 0;
+    for(var i = 0; i < data.Search.length; i++) {
+      var id = data['Search'][i]['imdbID'];
+      if ($('#language').val() == "") {
+        var imgMovie = data['Search'][i]['Poster'];
+        var nameMovie = data['Search'][i]['Title'];
+        if (imgMovie != "N/A") {
+          createElement(imgMovie, nameMovie, i + 1, id);    
+        }
+      } else {
+        getDataMovie(id);
+      }
+    }
+  })
+  .fail(function(error) {
+    console.log(error);
+  });
+    
+}
+
+/*fitro con titulo mas año mas idioma*/
+var iIndex = 0;
+function getDataMovie(id) {
+  $.ajax({
+    url: 'http://www.omdbapi.com',
+    data: {
+        apikey: '9e7fd663',
+        i: id,
+        type : 'movie'
+    }
+  })
+  .done(function(data) {
+    console.log(data['Language'], $('#language').val(), data['Language'] == $('#language').val());
+    if (data['Language'] == $('#language').val()) {
+      console.log("success", data);
+      var imgMovie = data['Poster'];
+      var nameMovie = data['Title'];
+      var id = data['imdbID'];
+      iIndex++;
+      createElement(imgMovie, nameMovie, iIndex, id);
+    }
+  })
+  .fail(function(e) {
+    console.log("error", e);
+  });
+  
+}
+
+function createElement(imgMovie, nameMovie, index, id) {
   console.log(imgMovie, nameMovie, index);
     if (cols == 0) {
       $("#listMovie").append('<div class="row listMovie"></div>');
@@ -132,26 +203,13 @@ function createElement(imgMovie, nameMovie, index) {
       $('.name').last().html('');
       $('.direccion').last().html('');
       });
-   /* $('.img-'+index).click(function(event) {
-      console.log(place.name, place.photos, place.geometry.location);
-      $('#modalLocal').modal('show');
-      $('.name').last().append(name);
-      $('.direccion').last().append('<span>'+direccion+'</span>')
-      console.log(name);
-      map2 = new google.maps.Map(document.getElementById('map2'), {
-        center: place.geometry.location,
-        zoom: 16
-      });*/
 
-      /*map2.setCenter(place.geometry.location);*/
+    $('.img-'+index).click(function(event) {
+      console.log("me pinche!!!", id);
+      window.location.href = 'view.html?search='+id;
+    });
 
-      /*var marker = new google.maps.Marker({
-        map: map2,
-        position: place.geometry.location,
-        //icon: image
-      });
-      
-    });*/
+
     $('.img-'+index).mouseover(function(event) {
       $('.img-'+index).css({'opacity': '0.6'})
       $('.img-'+index+' span').show();
@@ -168,4 +226,16 @@ function createElement(imgMovie, nameMovie, index) {
       cols = 0;
     }
   
+}
+
+for (var i = 1900; i <= 2018; i++) {
+  $("#yearCombobox").append('<option value="'+i+'">'+i+'</option>');
+}
+$("#yearCombobox").val(2018);
+
+$('#btnFilter').click(filterResults);
+function filterResults() {
+  var movie = $('#search').val();
+  var year = $('#yearCombobox').val();
+  setFiltreMovie(movie, year);
 }

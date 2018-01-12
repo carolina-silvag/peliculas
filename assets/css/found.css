@@ -19,36 +19,31 @@
 /*Fin estilo search*/
 
 /* Inicio estilos de la pagina */
-    * {
-     margin: 0;
-     padding: 0;
-    }
-
-    body {
-     background-color: #000;
-     font-family: 'Oswald', sans-serif;
-     font-size: 1.5em;
-    }
-    /*logo*/
-    p {
-      text-align: justify;
-    }
-    .logo {
-      width: 40%;
-      /*padding-bottom: 1%;*/
-    }
-    .navbar-default{
-    background-color: #011D28;
-    border-color: #011D28;
-    }
-    .navbar-default .navbar-nav>li>a{
-     color: #FFF;
-    }
-    /*carousel*/
-    .subTitle{
-     color: #FFF;
-     padding-bottom: 1%;
-    }
+body {
+ background-color: #000;
+ font-family: 'Oswald', sans-serif;
+ font-size: 1.5em;
+}
+/*logo*/
+p {
+  text-align: justify;
+}
+.logo {
+  width: 40%;
+  /*padding-bottom: 1%;*/
+}
+.navbar-default{
+background-color: #011D28;
+border-color: #011D28;
+}
+.navbar-default .navbar-nav>li>a{
+ color: #FFF;
+}
+/*carousel*/
+.subTitle{
+ color: #FFF;
+ padding-bottom: 1%;
+}
 /* Fin estilos de la pagina */
 
 /* Logo nav  */
@@ -86,6 +81,17 @@ transform:scale(1.2);
 .portafolio {
     overflow:hidden;
 }
+
+/*efecto de nombres peliculas de las imagenes*/
+.nameList {
+  color: red;
+  height: 90vh;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*footer*/
 footer {
  letter-spacing: .1em;
