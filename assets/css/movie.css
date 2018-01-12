@@ -1,13 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
+ margin: 0;
+ padding: 0;
 }
-
+/* Logo nav  */
+.logo{
+    color:#FFF;
+    font-weight:800;
+    font-size:30px;
+    width: 20%;
+}
 body {
   background-color: #000;
   color: #FFF;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
+  letter-spacing: .1em;
 }
 
 p {
@@ -179,11 +186,31 @@ footer {
  letter-spacing: .1em;
  color: #FFF;
 }
+.text-footer p a {
+  text-align: justify;
+  color: #FFF;
+}
+.text-footer p a:hover {
+  text-align: justify;
+  color: #027feb;
+}
 .icons{
   font-size: 2em;
   margin-left: 20px;
 }
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+  color: #FFF;
+  font-size: 1.8em;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+  color: #027feb;
+}
 .copyright {
   background-color: #011D28;
   padding-top: 30px;
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #22A1D3;
+    text-decoration: none;
 }

@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 40%;
+  }
+  .navbar-brand {
+    padding: 0;
+    float: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 30%;
+    text-align: center;
+  }
+  .navbar-brand {
+    padding: 0;
+    float: none;
+  }
+}

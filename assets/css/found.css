@@ -1,4 +1,14 @@
-
+* {
+ margin: 0;
+ padding: 0;
+}
+/* Logo nav  */
+.logo{
+    color:#FFF;
+    font-weight:800;
+    font-size:30px;
+    width: 20%;
+}
 /*Estilo search*/
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
@@ -23,13 +33,14 @@ body {
  background-color: #000;
  font-family: 'Oswald', sans-serif;
  font-size: 1.5em;
+ letter-spacing: .1em;
 }
 /*logo*/
 p {
   text-align: justify;
 }
 .logo {
-  width: 40%;
+  width: 20%;
   /*padding-bottom: 1%;*/
 }
 .navbar-default{
@@ -46,13 +57,7 @@ border-color: #011D28;
 }
 /* Fin estilos de la pagina */
 
-/* Logo nav  */
-.logo{
-    color:#FFF;
-    font-weight:800;
-    font-size:30px;
-    width: 20%;
-}
+menu
 
 .imgUser {
     width: 100px;
@@ -97,10 +102,24 @@ footer {
  letter-spacing: .1em;
  color: #FFF;
 }
-
+.text-footer p a {
+  text-align: justify;
+  color: #FFF;
+}
+.text-footer p a:hover {
+  text-align: justify;
+  color: #027feb;
+}
 .icons{
   font-size: 2em;
   margin-left: 20px;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+  color: #FFF;
+  font-size: 1.8em;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+  color: #027feb;
 }
 .copyright {
   background-color: #011D28;
@@ -141,8 +160,11 @@ footer {
   width: 40%;
   /*padding-bottom: 1%;*/
 }
-
 .navbar-brand {
   padding: 0;
-
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #22A1D3;
+    text-decoration: none;
 }
