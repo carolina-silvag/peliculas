@@ -11,28 +11,26 @@
   <link rel="stylesheet" type="text/css" href="assets/css/media-found.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
-<header>
+<body>
   <nav class="navbar navbar-default nav navbar-fixed-top">
     <div class="container-fluid">
       <!-- <div class="navbar-header"> -->
-        <a class="navbar-brand logo" href="index.html"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
+        <a class="navbar-brand logo" href="movie.html"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
      <!--  </div> -->
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Buscar Saga</a></li>
-        <li><a href="#">Mis Sagas</a></li>
+        <li class="ocultar"><a href="sagas.html">Mis Sagas</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <div class="row">
-              <i class="fa fa-user-circle" aria-hidden="true"></i>
               <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
               <div hidden id="user-name" class="col-md-8"></div>
-              <span class="caret"></span>
             </div></a>
           <ul class="dropdown-menu" class="position-fixed">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li class="mostrar"><a href="#">Mis Sagas</a></li>
+            <li><a href="#">Administrar Cuenta</a></li>
+            <li><a href="#">Configurar Perfil</a></li>
             <li role="separator" class="divider"></li>
             <li id="btnSignOut" class="btnmenu"><a href="#">Sign-out</a></li>
           </ul>
@@ -40,76 +38,19 @@
       </ul>
     </div>
   </nav>
-
-  <!-- Modal Iniciar Sesión-->
-  <div class="modal fade" id="modalLog-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content loginBackground">
-        <div class="modal-header text-center">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="modal-user thumbnail" id="exampleModalLabel"><i class="fa fa-user-circle fa-5x" aria-hidden="true"></i></div>
-        </div>
-        <div class="modal-body">
-          <form class="text-center login">
-            <div class="form-group has-success has-feedback">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" id="email" aria-describedby="inputGroupSuccess1Status" placeholder="Username">
-              </div>
-              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
-            </div>
-            <div class="form-group has-success has-feedback">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" id="password" aria-describedby="inputGroupSuccess1Status" placeholder="Password">
-              </div>
-              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
-            </div>
-            <button type="button" class="btn btn-defaut" id="btnLogin">LOG-IN</button>
-            <p class="line"> O ingresa con </p>
-            <a href="#"><i class="fa fa-facebook-official fa-2x" id="icoFacebook" aria-hidden="true" href=""></i></a>
-            <a href="#"><i class="fa fa-google fa-2x" id="icoGoogle" aria-hidden="true"></i></a>
-            <p class="recoverPassword">Forgot password? <a href="#">Click Here</a></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Registro-->
-  <div class="modal fade" id="modalSign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content registry text-center modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <button type="button" id="btnVolverLogin" class="btn btn-light btnLogin text-center" data-toggle="modal" data-target="#modalLog-in">Ya tienes una cuenta?</button>
-        <p class="text-center">O CREA UNA CUENTA NUEVA</p>
-
-        <div class="modal-body">
-          <form>
-            <input class="form-control" type="text" placeholder="Nombre Usuario">
-            <input class="form-control" id="signUpEmail" type="text" placeholder="Correo Electronico">
-            <input class="form-control" id="signUpPass" type="text" placeholder="Contraseña">
-            <button type="button" class="btn btn-info" id="btnSingUp">ENVIAR</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
   <section>
     <div class="container">
+      <div class="row">
+        <div class="col-xs-12 title-category">
+          <h2 class="text-center">Categorías</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xs-12 text-center">
           <label class="control-label" for="searchinput">Búsqueda de películas</label>
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-              <div class="form-group">
+              <div id="imaginary_container">
                 <div class="input-group stylish-input-group input-append">
                   <input type="text" class="form-control" id="search" placeholder="Título de película" >
                   <span class="input-group-addon">
@@ -124,11 +65,9 @@
         </div>
       </div>
     </div>
-
+  </section>
+  <section>
     <div class="container">
-        <!-- <div><a href="#"><img class="tama" src="" alt=""></a></div> -->
-        <!-- <li><a href="#"><img class="tamaño" src="" alt=""></a></li> -->
-        <!-- aqui peliculas -->
       <div class="row">
         <form class="col-xs-12 form-inline text-center">
           <div class="form-group">
@@ -150,10 +89,7 @@
     </div>
 
     <div id="listMovie">
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
     </div>
   </section>
   <!--Footer-->

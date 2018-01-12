@@ -118,11 +118,11 @@ function setSearchMovie(movie) {
 $('#btnVerMovie').click(watchMovie)
 
 function watchMovie() {
-  addDatosMovie();
+  addDataMovie();
 }
 
 
-function addDatosMovie() {
+function addDataMovie() {
   console.log(currentUser);
   var uid = currentUser.uid;
   database.ref("/sagas/"+uid+"/"+movieData['imdbID']).set(movieData);

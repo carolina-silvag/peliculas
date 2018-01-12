@@ -36,6 +36,7 @@ function loadCurrentUser(uid) {
       src: user.photoURL
     });
     divUserPic.removeAttr('hidden');
+    myMovies(uid);
   });
 }
 
@@ -62,7 +63,13 @@ function signOut() {
   window.location.href = 'index.html';
 }
 
-
+function myMovies (uid) {
+  console.log('buscando peliculas para ', uid);
+  database.ref('/sagas/'+uid).on("value", function(data) {
+    var movies = data.val();
+    console.log(movies);
+  });
+}
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
   interval: false

@@ -57,8 +57,6 @@ border-color: #011D28;
 }
 /* Fin estilos de la pagina */
 
-menu
-
 .imgUser {
     width: 100px;
 }
@@ -167,4 +165,8 @@ footer {
     text-align: justify;
     color: #22A1D3;
     text-decoration: none;
+}
+
+.mostrar {
+  display: none;
 }
