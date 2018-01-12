@@ -13,7 +13,8 @@
   $('#btnSingUp').click(singUp);
   $('#icoGoogle').click(ingresoGoogle);
   $('#icoFacebook').click(ingresoFacebook);
-  $('#btnVolverLogin').click(btnVolverLogin);
+  $('#ico2Google').click(ingresoGoogle);
+  $('#ico2Facebook').click(ingresoFacebook);
 
   var database = firebase.database();
   var userConect = null;
