@@ -19,6 +19,7 @@ $('#ico2Facebook').click(ingresoFacebook);
 var database = firebase.database();
 var userConect = null;
 
+/*var errorSingUp = 0*/
 function singUp() {
   var userName = $('#userName').val();
   var email = $('#signUpEmail').val();
@@ -27,14 +28,21 @@ function singUp() {
 
   var promise = auth.createUserWithEmailAndPassword(email, password);
   promise.then(function(user) {
+    $('#alertUserSingUp').html("");
     addUserBD(user, userName);
+    /*error = -1;*/
     console.log(user);
+    /*$('#alertUserSing-up').append('<p class="text-center alertUser">Datos enviados correctamente</p>')*/
+
   }).catch(function(error) {
+  
     console.log(error);
-    $('#alertUserSingUp').append('<p class="text-center alertUser">por favor complete los campos en blanco</p>')
+   
+      $('#alertUserSingUp').append('<p class="text-center alertUser">por favor complete los campos en blanco</p>')
+    
   });
 }
-
+var errorLogin = 1
 function login() {
   var email = $('#email').val();
   var password = $('#password').val();
@@ -45,8 +53,11 @@ function login() {
     window.location.href = 'movie.html';
     console.log('logged in:', user);
   }).catch(function(error){
+    errorLogin += 1
     console.log(error);
-    $('#alertUser').append('<p class="text-center alertUser">por favor ingresa un usuario valido</p>')
+    if(errorLogin == 1) {
+      $('#alertUser').append('<p class="text-center alertUser">por favor ingresa un usuario valido</p>')  
+    }
   })
 }
 
