@@ -3,12 +3,6 @@
     padding: 0;
 }
 /* Logo nav  */
-.logo{
-    color:#FFF;
-    font-weight:800;
-    font-size:30px;
-    width: 20%;
-}
 .navbar-default .navbar-nav .open .dropdown-menu>li>a{
     color: #027feb;
 }
@@ -74,6 +68,12 @@ p {
 /*seccion de peliculas*/
 .listMovie {
     margin: 2em;
+}
+.busqueda {
+  color: #FFF;
+}
+.separacion-search {
+  padding-top: 8%;
 }
 .portafolio-contenedor {
     -webkit-transition:all .9s ease;
