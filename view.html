@@ -15,7 +15,7 @@
 <body>
   <nav class="navbar navbar-default nav navbar-fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="movie.html"><img class="logo img img-responsive imgUser" src="assets/images/sagafan-celeste.png" alt=""></a>
+      <a class="navbar-brand" href="movie.html"><img class="img img-responsive imgUser" src="assets/images/sagafan-celeste.png" alt=""></a>
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="sagas.html">Mis Sagas</a></li>
@@ -24,7 +24,7 @@
             <div class="row">
               <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
               <div hidden id="user-name" class="col-md-8"></div>
-              
+
             </div></a>
           <ul class="dropdown-menu" class="position-fixed">
             <li><a href="#">Perfil</a></li>
@@ -41,12 +41,12 @@
   <section class="movie">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-4 col-xs-offset-1">
           <img src="" id="choseImage" alt="..." class="img-thumbnail img-responsive">
           <p id="parrafo"></p>
           <button id="btnVerMovie" type="button" class="btn btn-light btnVer"><strong>Ver película</strong></button>
         </div>
-        <div class="col-xs-6 contInfo">
+        <div class="col-xs-6 col-xs-offset-1 contInfo">
           <div class="form-group">
             <span><strong>Título original:</strong></span>
             <span id="title"></span>
@@ -89,7 +89,7 @@
               <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>
               <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Average">3 stars</label>
               <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
-              <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>     
+              <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
             </ul>
           <!-- </div>
         </div> -->
@@ -152,7 +152,7 @@
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <!-- para utilizar firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  
+
   <script src="assets/js/view.js"></script>
 </body>
 </html>
