@@ -4,11 +4,12 @@
 }
 /* Logo nav  */
 .logo{
-    color:#FFF;
-    font-weight:800;
-    font-size:30px;
-    width: 20%;
+  color:#FFF;
+  font-weight:800;
+  font-size:30px;
+  width: 20%;
 }
+
 body {
   background-color: #000;
   color: #FFF;
@@ -35,35 +36,47 @@ h3 {
 .navbar-brand {
   padding: 0;
 }
+
 .navbar-default {
   background-color: #011D28;
   border-color: #011D28;
-
 }
+
 .navbar-default .navbar-nav>li>a{
   color: #FFF;
   /* font-size: 1.5em; */
 }
 
+.navbar-default .navbar-nav>li>a:hover{
+  color:#027feb;
+  /* font-size: 1.5em; */
+}
+
 .open>a:hover {
   background-color: #555;
-  }
+}
 
 menu:hover{
   background-color: #ddd;
-
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
    color: #027feb;
 }
+
 .dropdown-menu{
  width:50%;
  background-color: #011D28;
 }
+
+.dropdown-togge.button {
+  color: #FFF;
+}
+
 .control-label{
  padding-top: 150px;
 }
+
 .film{
  padding-left: 30px;
  padding-bottom: 30px;
@@ -87,19 +100,21 @@ menu:hover{
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
 }
+
 .stylish-input-group .input-group-addon{
     background: white !important;
 }
+
 .stylish-input-group .form-control{
     border-right:0;
   box-shadow:0 0 0;
   border-color:#ccc;
 }
+
 .stylish-input-group button{
     border:0;
     background:transparent;
 }
-
 /*Fin estilo search*/
 .title-category{
   padding-bottom: 3%;
@@ -109,7 +124,6 @@ menu:hover{
 .imgUser {
 	width: 100px;
 }
-
 /*desde aqui clases del carrusel*/
 .multi-item-carousel{
   .carousel-inner{
@@ -169,6 +183,7 @@ h1{
   -ms-transition:all .9s ease;
   width:100%;
 }
+
 .portafolio-contenedor:hover {
   -webkit-transform:scale(1.2);
   -moz-transform:scale(1.2);
@@ -186,29 +201,36 @@ footer {
  letter-spacing: .1em;
  color: #FFF;
 }
+
 .text-footer p a {
   text-align: justify;
   color: #FFF;
 }
+
 .text-footer p a:hover {
   text-align: justify;
   color: #027feb;
 }
+
 .icons{
   font-size: 2em;
   margin-left: 20px;
 }
+
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
   color: #FFF;
   font-size: 1.8em;
 }
+
 .fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
   color: #027feb;
 }
+
 .copyright {
   background-color: #011D28;
   padding-top: 30px;
 }
+
 .text-footer p a:hover {
   text-align: justify;
   color: #22A1D3;
