@@ -20,7 +20,7 @@ p {
   text-align: justify;
 }
 .logo {
-  width: 40%;
+  width: 25%;
   /*padding-bottom: 1%;*/
 }
 .navbar-brand {
@@ -80,8 +80,30 @@ footer {
   background-color: #011D28;
   padding-top: 30px;
 }
+
 .text-footer p a:hover {
     text-align: justify;
     color: #22A1D3;
     text-decoration: none;
 }
+
+
+/*Contenedor de información de la película*/
+
+.contInfo{
+  padding-top: 5%;
+}
+
+/*Botón ver película*/
+.btnVer {
+ background-color: #22A1D3;
+ font-size: 1.4em;
+ margin: 0 10px 0 10px;
+ color: #FFF;
+ margin-top: 3%;
+}
+
+.movie{
+  padding-top: 10%;
+}
+
