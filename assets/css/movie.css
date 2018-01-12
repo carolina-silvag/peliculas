@@ -4,25 +4,29 @@
 }
 
 body {
-  background-color: #252524;
+  background-color: #000;
   color: #FFF;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
-
 }
+
 p {
   text-align: justify;
 }
-
+/*titles of the Categories*/
+h3 {
+  background-color: #011D28;
+  padding: 0.5em;
+  margin-bottom: 20px;
+}
 /*logo*/
-
 .logo {
   width: 40%;
   /*padding-bottom: 1%;*/
 }
-
+/*Menu*/
 .navbar-brand {
-    padding: 0;
+  padding: 0;
 }
 .navbar-default {
   background-color: #011D28;
@@ -32,7 +36,7 @@ p {
 .navbar-default .navbar-nav>li>a{
   color: #FFF;
   font-size: 1.5em;
-  }
+}
 
 .open>a:hover {
   background-color: #555;
@@ -42,20 +46,25 @@ menu:hover{
   background-color: #ddd;
 
 }
+
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
    color: #FFF;
 }
 .dropdown-menu{
  width:50%;
- background-color: #FFF;
+ background-color: #011D28;
 }
-
+.control-label{
+ padding-top: 150px;
+}
 .film{
  padding-left: 30px;
-}
-/*search*/
+ padding-bottom: 30px;
+  }
+/*search
 .control-label {
  font-size: 2em;
+ padding-top: 5.5em;
 }
 .caret {
   color: #FFF;
@@ -66,8 +75,7 @@ menu:hover{
 .space {
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
+}*/
 /*Estilo search*/
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
@@ -86,7 +94,6 @@ menu:hover{
 }
 
 /*Fin estilo search*/
-
 .title-category{
   padding-bottom: 3%;
   padding-top: 3%;
@@ -94,14 +101,6 @@ menu:hover{
 
 .imgUser {
 	width: 100px;
-}
-
-/* titulos de las Categorías */
-
-h2 {
-  font-size: 1.0em;;
-  background-color: #011D28;
-  padding: 0.5em;
 }
 
 /*desde aqui clases del carrusel*/
@@ -155,21 +154,6 @@ h1{
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
 }
 /*hasta aqui termina carrusel*/
-/*footer*/
-footer {
- background-color: #252524;
- letter-spacing: .1em;
- color: #FFF;
-}
-.icons{
-  font-size: 2em;
-  margin-left: 20px;
-}
-.copyright {
-  background-color: #011D28;
-  padding-top: 30px;
-}
-
 /*estilo para carrusel*/
 .portafolio-contenedor {
   -webkit-transition:all .9s ease;
@@ -188,4 +172,18 @@ footer {
 
 .portafolio {
   overflow:hidden;
+}
+/*footer*/
+footer {
+ background-color: #000;
+ letter-spacing: .1em;
+ color: #FFF;
+}
+.icons{
+  font-size: 2em;
+  margin-left: 20px;
+}
+.copyright {
+  background-color: #011D28;
+  padding-top: 30px;
 }
