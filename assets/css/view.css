@@ -33,6 +33,7 @@ border-color: #011D28;
 .navbar-default .navbar-nav>li>a{
  color: #FFF;
 }
+<<<<<<< Updated upstream
 
 /*navegador usuario*/
 .imgUser {
@@ -40,6 +41,16 @@ border-color: #011D28;
 }
 
 
+=======
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: #027feb;
+}
+.dropdown-menu {
+    width: 50%;
+    background-color: #011D28;
+}
+    
+>>>>>>> Stashed changes
 /*Estilo search*/
 #imaginary_container{
   margin-top:2%; /* Don't copy this */
@@ -112,6 +123,7 @@ footer {
 .movie{
   padding-top: 10%;
 }
+<<<<<<< Updated upstream
 
 .listCalifica {
   list-style: none;
@@ -125,3 +137,5 @@ footer {
 .mostrar {
   display: none;
 }
+=======
+>>>>>>> Stashed changes

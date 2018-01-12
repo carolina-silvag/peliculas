@@ -42,7 +42,7 @@ h3 {
 }
 .navbar-default .navbar-nav>li>a{
   color: #FFF;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 
 .open>a:hover {
@@ -55,7 +55,7 @@ menu:hover{
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-   color: #FFF;
+   color: #027feb;
 }
 .dropdown-menu{
  width:50%;

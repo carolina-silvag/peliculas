@@ -1,6 +1,6 @@
 * {
- margin: 0;
- padding: 0;
+    margin: 0;
+    padding: 0;
 }
 /* Logo nav  */
 .logo{
@@ -9,7 +9,18 @@
     font-size:30px;
     width: 20%;
 }
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: #027feb;
+}
+.dropdown-menu {
+    width: 50%;
+    background-color: #011D28;
+}
+    
 /*Estilo search*/
+.label-search {
+    color: #FFF;
+}
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
 }
@@ -30,55 +41,57 @@
 
 /* Inicio estilos de la pagina */
 body {
- background-color: #000;
- font-family: 'Oswald', sans-serif;
- font-size: 1.5em;
- letter-spacing: .1em;
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .1em;
 }
 /*logo*/
 p {
-  text-align: justify;
+    text-align: justify;
 }
 .logo {
-  width: 20%;
+    width: 20%;
   /*padding-bottom: 1%;*/
 }
 .navbar-default{
-background-color: #011D28;
-border-color: #011D28;
+    background-color: #011D28;
+    border-color: #011D28;
 }
 .navbar-default .navbar-nav>li>a{
- color: #FFF;
+    color: #FFF;
 }
 /*carousel*/
 .subTitle{
- color: #FFF;
- padding-bottom: 1%;
+    color: #FFF;
+    padding-bottom: 1%;
 }
 /* Fin estilos de la pagina */
+<<<<<<< Updated upstream
 
+=======
+menu
+>>>>>>> Stashed changes
 .imgUser {
     width: 100px;
 }
-
 /*seccion de peliculas*/
 .listMovie {
     margin: 2em;
 }
-
 .portafolio-contenedor {
--webkit-transition:all .9s ease;
--moz-transition:all .9s ease;
--o-transition:all .9s ease;
--ms-transition:all .9s ease;
-width:100%;
+    -webkit-transition:all .9s ease;
+    -moz-transition:all .9s ease;
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease;
+    width:100%;
 }
 .portafolio-contenedor:hover {
--webkit-transform:scale(1.2);
--moz-transform:scale(1.2);
--ms-transform:scale(1.2);
--o-transform:scale(1.2);
-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
 }
 
 .portafolio {
@@ -87,41 +100,40 @@ transform:scale(1.2);
 
 /*efecto de nombres peliculas de las imagenes*/
 .nameList {
-  color: red;
-  height: 90vh;
-  font-size: 200%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: red;
+    height: 90vh;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 /*footer*/
 footer {
- letter-spacing: .1em;
- color: #FFF;
+    letter-spacing: .1em;
+    color: #FFF;
 }
 .text-footer p a {
-  text-align: justify;
-  color: #FFF;
+    text-align: justify;
+    color: #FFF;
 }
 .text-footer p a:hover {
-  text-align: justify;
-  color: #027feb;
+    text-align: justify;
+    color: #027feb;
 }
 .icons{
-  font-size: 2em;
-  margin-left: 20px;
+    font-size: 2em;
+    margin-left: 20px;
 }
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
-  color: #FFF;
-  font-size: 1.8em;
+    color: #FFF;
+    font-size: 1.8em;
 }
 .fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
-  color: #027feb;
+    color: #027feb;
 }
 .copyright {
-  background-color: #011D28;
-  padding-top: 30px;
+    background-color: #011D28;
+    padding-top: 30px;
 }
 .adress span , .menu span{
    color: #FFF;
@@ -159,7 +171,7 @@ footer {
   /*padding-bottom: 1%;*/
 }
 .navbar-brand {
-  padding: 0;
+    padding: 0;
 }
 .text-footer p a:hover {
     text-align: justify;
