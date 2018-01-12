@@ -2,13 +2,6 @@
  margin: 0;
  padding: 0;
 }
-/* Logo nav  */
-.logo{
-  color:#FFF;
-  font-weight:800;
-  font-size:30px;
-  width: 20%;
-}
 
 body {
   background-color: #000;
@@ -80,9 +73,9 @@ menu:hover{
 .film{
  padding-left: 30px;
  padding-bottom: 30px;
-  }
+}
 
-  footer {
+footer {
  background-color: #000;
  letter-spacing: .1em;
  color: #FFF;
@@ -126,3 +119,8 @@ menu:hover{
 .mostrar {
   display: none;
 }
+
+.imgUser {
+  width: 100px;
+}
+
