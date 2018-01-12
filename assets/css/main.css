@@ -46,6 +46,9 @@ p {
     color: #2784f3;
     background: transparent;
 }
+.alertUser {
+  color: red;
+}
 /*slides*/
 .imgSaga {
   width: 100% !important;

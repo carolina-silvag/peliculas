@@ -1,53 +1,55 @@
 // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
-    authDomain: "peliculas-999a3.firebaseapp.com",
-    databaseURL: "https://peliculas-999a3.firebaseio.com",
-    projectId: "peliculas-999a3",
-    storageBucket: "peliculas-999a3.appspot.com",
-    messagingSenderId: "918922040142"
-  };
-  firebase.initializeApp(config);
-  
-  $('#btnLogin').click(login);
-  $('#btnSingUp').click(singUp);
-  $('#icoGoogle').click(ingresoGoogle);
-  $('#icoFacebook').click(ingresoFacebook);
-  $('#ico2Google').click(ingresoGoogle);
-  $('#ico2Facebook').click(ingresoFacebook);
+var config = {
+  apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
+  authDomain: "peliculas-999a3.firebaseapp.com",
+  databaseURL: "https://peliculas-999a3.firebaseio.com",
+  projectId: "peliculas-999a3",
+  storageBucket: "peliculas-999a3.appspot.com",
+  messagingSenderId: "918922040142"
+};
+firebase.initializeApp(config);
 
-  var database = firebase.database();
-  var userConect = null;
+$('#btnLogin').click(login);
+$('#btnSingUp').click(singUp);
+$('#icoGoogle').click(ingresoGoogle);
+$('#icoFacebook').click(ingresoFacebook);
+$('#ico2Google').click(ingresoGoogle);
+$('#ico2Facebook').click(ingresoFacebook);
 
-  function singUp() {
-    var userName = $('#userName').val();
-    var email = $('#signUpEmail').val();
-    var password = $('#signUpPass').val();
-    var auth = firebase.auth();
+var database = firebase.database();
+var userConect = null;
 
-    var promise = auth.createUserWithEmailAndPassword(email, password);
-    promise.then(function(user) {
-      addUserBD(user, userName);
-      console.log(user);
-    }).catch(function(error) {
-      console.log(error);
-    });
-  }
+function singUp() {
+  var userName = $('#userName').val();
+  var email = $('#signUpEmail').val();
+  var password = $('#signUpPass').val();
+  var auth = firebase.auth();
 
-  function login() {
-    var email = $('#email').val();
-    var password = $('#password').val();
-    var auth = firebase.auth();
+  var promise = auth.createUserWithEmailAndPassword(email, password);
+  promise.then(function(user) {
+    addUserBD(user, userName);
+    console.log(user);
+  }).catch(function(error) {
+    console.log(error);
+    $('#alertUserSingUp').append('<p class="text-center alertUser">por favor complete los campos en blanco</p>')
+  });
+}
 
-    var promise = auth.signInWithEmailAndPassword(email, password);
-    promise.then(function(user) {
-      window.location.href = 'movie.html';
-      console.log('logged in:', user);
-    }).catch(function(error){
-      console.log(error);
-    })
-  }
-// })
+function login() {
+  var email = $('#email').val();
+  var password = $('#password').val();
+  var auth = firebase.auth();
+
+  var promise = auth.signInWithEmailAndPassword(email, password);
+  promise.then(function(user) {
+    window.location.href = 'movie.html';
+    console.log('logged in:', user);
+  }).catch(function(error){
+    console.log(error);
+    $('#alertUser').append('<p class="text-center alertUser">por favor ingresa un usuario valido</p>')
+  })
+}
+
 
 function ingresoGoogle() {
   if(!firebase.auth().currentUser){
