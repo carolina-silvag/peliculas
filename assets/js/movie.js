@@ -63,9 +63,14 @@ function signOut() {
 }
 
 /*buscar por titulo*/
+$('#terror1').click(search2);
 $('#btnSearch').click(search);
 function search() {
   window.location.href = 'found.html?search='+$('#search').val();
+}
+
+function search2() {
+  window.location.href = 'found.html?search='+'saw';
 }
 
 
@@ -113,3 +118,4 @@ $('.multi-item-carousel .item').each(function(){
   }
 
 });
+
