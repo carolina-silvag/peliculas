@@ -1,13 +1,23 @@
 @media screen and (max-width: 767px) {
   .logo {
-    width: 40%;
+    width: 60%;
   }
   .navbar-brand {
     padding: 0;
     float: none;
   }
+  [class*="ocultar"]{
+    display: none !important; 
+  }
+  [class*="mostrar"]{
+    display: inline-block; 
+  }
+  /*[class*="navbar-right"]{
+    float: right;
+  }*/
+  
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .logo {
     width: 30%;
     text-align: center;
@@ -15,5 +25,11 @@
   .navbar-brand {
     padding: 0;
     float: none;
+  }
+  [class*="ocultar"]{
+    display: none !important; 
+  }
+  [class*="mostrar"]{
+    display: inline-block; 
   }
 }

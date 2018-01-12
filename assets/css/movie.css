@@ -210,7 +210,11 @@ footer {
   padding-top: 30px;
 }
 .text-footer p a:hover {
-    text-align: justify;
-    color: #22A1D3;
-    text-decoration: none;
+  text-align: justify;
+  color: #22A1D3;
+  text-decoration: none;
+}
+
+.mostrar {
+  display: none;
 }
