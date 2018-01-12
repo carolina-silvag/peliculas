@@ -1,8 +1,8 @@
 body {
-  background-color: #252524;
+  background-color: #000;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
-
+  letter-spacing: .1em;
 }
 p {
   text-align: justify;
@@ -17,13 +17,16 @@ p {
  }
 
 /*css de modales registro y login*/
- .modal-content {
- background-color: #011D28;
- color: #FFF;
+.text-center p {
+  text-align: center;
+}
+.modal-content {
+  background-color: #011D28;
+  color: #FFF;
 }
 .modal-user {
- background-color: #011D28;
- color: #FFF;
+  background-color: #011D28;
+  color: #FFF;
 }
 .close {
   color: #FFF !important;
@@ -40,14 +43,27 @@ p {
   font-size: 200%;
 }
 .btnLogin {
-  background-color: #22A1D3;
+  background-color: #027feb;
 }
 .fa-user-circle {
-    color: #2784f3;
-    background: transparent;
+  color: #011D28;
+  background: transparent;
 }
 .alertUser {
-  color: red;
+  color: #FFF;
+}
+.has-success .input-group-addon {
+  color: #027feb;
+  background-color:#99CDFF;
+  border-color: #027feb;
+}
+.has-success .form-control-feedback {
+  color: #027feb;
+}
+.btn-info {
+  color: #FFF;
+  background-color: #027feb;
+  border-color: #027feb;
 }
 /*slides*/
 .imgSaga {
@@ -55,8 +71,8 @@ p {
   height: 100vh !important;
 }
 .subTitle {
- color: #FFF;
- padding: 1% 1%;
+  color: #FFF;
+  padding: 1% 1%;
 }
 /*.carousel img {
   width: 250vh;
@@ -65,18 +81,18 @@ p {
   background-size: cover;
 }*/
 .carousel-caption {
- bottom: 50px;
+  bottom: 50px;
 }
 .user {
- background-color: #252524;
- border: 0px solid #252524;
+  background-color: #000;
+  border: none;
 }
 /*registry*/
 .creaCuenta,.datosRegistro, .btnEviarRegistro {
   margin-top: 3%;
 }
 .registry {
-margin-bottom: 20%;
+  margin-bottom: 20%;
 }
 
 .btnRegistry {
@@ -84,6 +100,10 @@ margin-bottom: 20%;
  font-size: 1.4em;
  margin: 0 10px 0 10px;
  color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:#22A1D3;
+    background-color: transparent;
 }
 .entry {
  padding-top: 7em;
@@ -95,18 +115,28 @@ margin-bottom: 20%;
  color: #FFF;
  text-align: center;
 }
-
-
 /*footer*/
 footer {
- background-color: #252524;
  letter-spacing: .1em;
  color: #FFF;
 }
-
+.text-footer p a {
+  text-align: justify;
+  color: #FFF;
+}
+.text-footer p a:hover {
+  text-align: justify;
+  color: #22A1D3;
+}
 .icons{
   font-size: 2em;
   margin-left: 20px;
+}
+.icons-footer a i {
+  color: #FFF;
+}
+.icons-footer a i:hover {
+  color: #22A1D3;
 }
 .copyright {
   background-color: #011D28;
@@ -124,17 +154,16 @@ footer {
    font-size: 16px;
    letter-spacing: 3px;
 }
-
 .adress li a , .menu li a{
-    color:#FFF;
-    letter-spacing: 3px;
-    text-decoration:none;
-    font-size:12px;
+  color:#FFF;
+  letter-spacing: 3px;
+  text-decoration:none;
+  font-size:12px;
 }
 
 .adress li, .menu li{
-    margin-top: 5px;
-    list-style: none;
+  margin-top: 5px;
+  list-style: none;
 }
 
 .adress li a:hover , .menu li a:hover{
@@ -152,4 +181,9 @@ footer {
 .navbar-brand {
   padding: 0;
 
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #22A1D3;
+    text-decoration: none;
 }
