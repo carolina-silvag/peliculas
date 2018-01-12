@@ -96,13 +96,13 @@ p {
 }
 
 .btnRegistry {
- background-color: #22A1D3;
+ background-color: #027feb;
  font-size: 1.4em;
  margin: 0 10px 0 10px;
  color: #FFF;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color:#22A1D3;
+    color:#027feb;
     background-color: transparent;
 }
 .entry {
@@ -126,17 +126,17 @@ footer {
 }
 .text-footer p a:hover {
   text-align: justify;
-  color: #22A1D3;
+  color: #027feb;
 }
 .icons{
   font-size: 2em;
   margin-left: 20px;
 }
-.icons-footer a i {
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
   color: #FFF;
 }
-.icons-footer a i:hover {
-  color: #22A1D3;
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+  color: #027feb;
 }
 .copyright {
   background-color: #011D28;
