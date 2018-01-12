@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="assets/images/sagafan-logo.ico">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/5star.css">
   <link rel="stylesheet" type="text/css" href="assets/css/view.css">
   <link rel="stylesheet" type="text/css" href="assets/css/media-view.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -15,32 +16,33 @@
   <nav class="navbar navbar-default nav navbar-fixed-top">
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Mis Sagas</a></li>
+        <li><a href="sagas.html">Mis Sagas</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <div class="row">
               <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
               <div hidden id="user-name" class="col-md-8"></div>
-              <span class="caret"></span>
+              
             </div></a>
           <ul class="dropdown-menu" class="position-fixed">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Administrar Cuenta</a></li>
+            <li><a href="#">Configurar Perfil</a></li>
             <li role="separator" class="divider"></li>
             <li id="btnSignOut"><a href="#">Sign-out</a></li>
           </ul>
         </li>
       </ul>
-      <a class="navbar-brand" href="#"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
+      <a class="navbar-brand" href="#"><img class="logo img img-responsive imgUser" src="assets/images/sagafan-celeste.png" alt=""></a>
     </div>
   </nav>
   <section class="movie">
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
-          <img src="assets/images/american pie.jpg" id="choseImage" alt="..." class="img-thumbnail img-responsive">
-          <button type="button" class="btn btn-light btnVer"><strong>Ver película</strong></button>
+          <img src="" id="choseImage" alt="..." class="img-thumbnail img-responsive">
+          <p id="parrafo"></p>
+          <button id="btnVerMovie" type="button" class="btn btn-light btnVer"><strong>Ver película</strong></button>
         </div>
         <div class="col-xs-6 contInfo">
           <div class="form-group">
@@ -52,14 +54,43 @@
             <span id="director"></span>
           </div>
           <div class="form-group">
-            <span><strong>Reparto:</strong></span>
+            <span><strong>Escritores:</strong></span>
+            <span id="writer"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Actores:</strong></span>
             <span id="actors"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Producción:</strong></span>
+            <span id="production"></span>
           </div>
           <div class="form-group">
             <span><strong>Año:</strong></span>
             <span id="year"></span>
           </div>
+          <div class="form-group">
+            <span><strong>Premios:</strong></span>
+            <span id="awards"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Tiempo de Duración:</strong></span>
+            <span id="runtime"></span>
+          </div>
         </div>
+        <!-- <div class="row">
+          <div class="col-xs-12"> -->
+            <h3 class="text-center listCalifica">Califica</h3>
+            <hr />
+            <ul class="rate-area text-center">
+              <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Amazing">5 stars</label>
+              <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>
+              <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Average">3 stars</label>
+              <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
+              <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>     
+            </ul>
+          <!-- </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -119,8 +150,7 @@
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <!-- para utilizar firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <!-- API OMDb-->
-  <script src="http://www.omdbapi.com/?apikey=[yourkey]&"></script>
-  <script src="assets/js/app.js"></script>
+  
+  <script src="assets/js/view.js"></script>
 </body>
 </html>

@@ -34,6 +34,12 @@ border-color: #011D28;
  color: #FFF;
 }
 
+/*navegador usuario*/
+.imgUser {
+  width: 100px;
+}
+
+
 /*Estilo search*/
 #imaginary_container{
   margin-top:2%; /* Don't copy this */
@@ -105,5 +111,14 @@ footer {
 
 .movie{
   padding-top: 10%;
+}
+
+.listCalifica {
+  list-style: none;
+}
+
+.star {
+  color: yellow;
+   display: inline-block;
 }
 

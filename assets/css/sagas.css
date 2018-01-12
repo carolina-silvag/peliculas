@@ -66,3 +66,8 @@ h1{
 .portafolio {
   overflow:hidden;
 }
+
+/*nvegador estilo a usuario*/
+.imgUser {
+  width: 100px;
+}

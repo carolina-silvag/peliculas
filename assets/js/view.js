@@ -11,6 +11,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 var auth = firebase.auth();
 var currentUser = null;
+var movieData = null;
 
 auth.onAuthStateChanged(function(user) {
   if (user) {
@@ -74,13 +75,70 @@ $.urlParam = function(name){
 
 console.log($.urlParam('search'));
 
-$('#btnVerPelicula').click(mirrow)
+/*guardando el valor obtenido de movie.js*/
+var movie = $.urlParam('search');
+setSearchMovie(movie);
 
-function mirrow() {
+
+/*cargando peliculas encontradas*/
+function setSearchMovie(movie) {
+  console.log('generando peticion para ', movie);
+  $.ajax({
+    url: 'http://www.omdbapi.com',
+    data: {
+        apikey: '9e7fd663',
+        i: movie,
+        type : 'movie'
+    },
+  })
+  .done(function(data) {
+    console.log(data);
+    // Se limipia la lista de fotos
+    if (data.Response != "False") {
+      movieData = data;
+      $('#choseImage').attr('src', data['Poster'])
+      $('#parrafo').html(data['Plot'])
+      $('#title').html(data['Title']);
+      $('#director').html(data['Director']);
+      $('#writer').html(data['Writer']);
+      $('#actors').html(data['Actors']);
+      $('#production').html(data['Production']);
+      $('#year').html(data['Year']);
+      $('#awards').html(data['Awards']);
+      $('#runtime').html(data['Runtime']);
+    }
+
+  })
+  .fail(function(error) {
+    console.log(error);
+  });
+    
+}
+
+$('#btnVerMovie').click(watchMovie)
+
+function watchMovie() {
   addDatosMovie();
 }
 
 
 function addDatosMovie() {
-  
+  console.log(currentUser);
+  var uid = currentUser.uid;
+  database.ref("/sagas/"+uid+"/"+movieData['imdbID']).set(movieData);
+}
+
+$('#star1').click(califico);
+$('#star2').click(califico);
+$('#star3').click(califico);
+$('#star4').click(califico);
+$('#star5').click(califico);
+
+/*var star1 = 0;
+var star2 = 0;
+var star3 = 0;
+var star4 = 0;
+var star5 = 0;*/
+function califico() {
+
 }
