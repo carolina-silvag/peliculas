@@ -97,7 +97,7 @@ p {
 /*efecto de nombres peliculas de las imagenes*/
 .nameList {
     color: red;
-    height: 90vh;
+    height: 75vh;
     font-size: 200%;
     display: flex;
     justify-content: center;

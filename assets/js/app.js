@@ -24,15 +24,15 @@ function singUp() {
   var userName = $('#userName').val();
   var email = $('#signUpEmail').val();
   var password = $('#signUpPass').val();
+  $('#alertUserSingUp').html("");
   var auth = firebase.auth();
 
   var promise = auth.createUserWithEmailAndPassword(email, password);
   promise.then(function(user) {
-    $('#alertUserSingUp').html("");
     addUserBD(user, userName);
     /*error = -1;*/
     console.log(user);
-    /*$('#alertUserSing-up').append('<p class="text-center alertUser">Datos enviados correctamente</p>')*/
+    $('#alertUserSing-up').append('<p class="text-center alertUser">Datos enviados correctamente</p>')
 
   }).catch(function(error) {
   
@@ -42,10 +42,11 @@ function singUp() {
     
   });
 }
-var errorLogin = 1
+
 function login() {
   var email = $('#email').val();
   var password = $('#password').val();
+  $('#alertUser').html("");
   var auth = firebase.auth();
 
   var promise = auth.signInWithEmailAndPassword(email, password);
@@ -53,11 +54,11 @@ function login() {
     window.location.href = 'movie.html';
     console.log('logged in:', user);
   }).catch(function(error){
-    errorLogin += 1
+    
     console.log(error);
-    if(errorLogin == 1) {
-      $('#alertUser').append('<p class="text-center alertUser">por favor ingresa un usuario valido</p>')  
-    }
+  
+    $('#alertUser').append('<p class="text-center alertUser">por favor ingresa un usuario valido</p>')  
+  
   })
 }
 

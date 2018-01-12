@@ -54,7 +54,7 @@ p {
   background: transparent;
 }
 .alertUser {
-  color: red;
+  color: red !important;
 }
 .has-success .input-group-addon {
   color: #027feb;
