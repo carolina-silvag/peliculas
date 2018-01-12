@@ -4,10 +4,10 @@
 }
 /* Logo nav  */
 .logo{
-    color:#FFF;
-    font-weight:800;
-    font-size:30px;
-    width: 20%;
+  color:#FFF;
+  font-weight:800;
+  font-size:30px;
+  width: 20%;
 }
 body {
  background-color: #000;
@@ -27,30 +27,23 @@ p {
   padding: 0;
 }
 .navbar-default{
-background-color: #011D28;
-border-color: #011D28;
+  background-color: #011D28;
+  border-color: #011D28;
 }
-.navbar-default .navbar-nav>li>a{
- color: #FFF;
-}
-<<<<<<< Updated upstream
 
 /*navegador usuario*/
 .imgUser {
   width: 100px;
 }
 
-
-=======
 .navbar-default .navbar-nav .open .dropdown-menu>li>a{
-    color: #027feb;
+  color: #027feb;
 }
 .dropdown-menu {
-    width: 50%;
-    background-color: #011D28;
+  width: 50%;
+  background-color: #011D28;
 }
     
->>>>>>> Stashed changes
 /*Estilo search*/
 #imaginary_container{
   margin-top:2%; /* Don't copy this */
@@ -99,9 +92,9 @@ footer {
 }
 
 .text-footer p a:hover {
-    text-align: justify;
-    color: #22A1D3;
-    text-decoration: none;
+  text-align: justify;
+  color: #22A1D3;
+  text-decoration: none;
 }
 
 
@@ -113,17 +106,17 @@ footer {
 
 /*Botón ver película*/
 .btnVer {
- background-color: #22A1D3;
- font-size: 1.4em;
- margin: 0 10px 0 10px;
- color: #FFF;
- margin-top: 3%;
+  background-color: #22A1D3;
+  font-size: 1.4em;
+  margin: 0 10px 0 10px;
+  color: #FFF;
+  margin-top: 3%;
 }
 
 .movie{
   padding-top: 10%;
 }
-<<<<<<< Updated upstream
+
 
 .listCalifica {
   list-style: none;
@@ -131,11 +124,10 @@ footer {
 
 .star {
   color: yellow;
-   display: inline-block;
+  display: inline-block;
 }
 
 .mostrar {
   display: none;
 }
-=======
->>>>>>> Stashed changes
+
