@@ -13,6 +13,7 @@ body {
 p {
   text-align: justify;
 }
+
 /*logo*/
 
 .logo {
@@ -93,6 +94,14 @@ menu:hover{
 
 .imgUser {
 	width: 100px;
+}
+
+/* titulos de las Categorías */
+
+h2 {
+  font-size: 1.0em;;
+  background-color: #011D28;
+  padding: 0.5em;
 }
 
 /*desde aqui clases del carrusel*/
