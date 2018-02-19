@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Películas</title>
+  <title>Sagafan</title>
+  <link rel="shortcut icon" href="assets/images/sagafan-logo.ico">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -12,7 +13,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-default nav">
+    <nav class="navbar navbar-default navbar-fixed-top nav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -20,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="logo" src="assets/images/sagafan-dark.png" alt=""></a>
+          <a class="navbar-brand" href="index.html"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,12 +56,17 @@
               <div class="form-group has-success has-feedback">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" id="password" aria-describedby="inputGroupSuccess1Status" placeholder="Password">
+                  <input type="password" class="form-control" id="password" aria-describedby="inputGroupSuccess1Status" placeholder="Password">
                 </div>
                 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                 <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
               </div>
+<<<<<<< HEAD
               <button type="button" class="btn btn-defaut" id="btnLogin">LOG-IN</button>
+=======
+              <div id="alertUser"></div>
+              <button type="button" class="btn btn-defaut btnLogin" id="btnLogin">LOG-IN</button>
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
               <p class="line"> O ingresa con </p>
               <a href="#"><i class="fa fa-facebook-official fa-2x" id="icoFacebook" aria-hidden="true" href=""></i></a>
               <a href="#"><i class="fa fa-google fa-2x" id="icoGoogle" aria-hidden="true"></i></a>
@@ -78,15 +84,17 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <button type="button" id="btnVolverLogin" class="btn btn-light btnLogin text-center" data-toggle="modal" data-target="#modalLog-in">Ya tienes una cuenta?</button>
-          <p class="text-center">O CREA UNA CUENTA NUEVA</p>
+          <button type="button" class="btn btn-light btnLogin text-center"  data-dismiss="modal" aria-label="Close">Ya tienes una cuenta?</button>
+          <p class="text-center creaCuenta">O CREA UNA CUENTA NUEVA</p>
 
           <div class="modal-body">
             <form>
-              <input class="form-control" type="text" placeholder="Nombre Usuario">
-              <input class="form-control" id="signUpEmail" type="text" placeholder="Correo Electronico">
-              <input class="form-control" id="signUpPass" type="text" placeholder="Contraseña">
-              <button type="button" class="btn btn-info" id="btnSingUp">ENVIAR</button>
+              <input class="form-control datosRegistro" type="text" placeholder="Nombre Usuario">
+              <input class="form-control datosRegistro" id="signUpEmail" type="text" placeholder="Correo Electronico">
+              <input class="form-control datosRegistro" id="signUpPass" type="password" placeholder="Contraseña">
+              <div id="alertUserSingUp"></div>
+              <button type="button" class="btn btn-info btnEviarRegistro" id="btnSingUp">ENVIAR</button>
+              <div id="alertUserSing-up"></div>
             </form>
           </div>
         </div>
@@ -95,7 +103,11 @@
   </header>
 
   <section>
+<<<<<<< HEAD
     <h3 class="text-center subTitle">SAGAS MÁS VISTAS</h3>
+=======
+    <!-- <h3 class="text-center subTitle">SAGAS MÁS VISTAS</h3> -->
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -110,35 +122,35 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="assets/images/avengers.jpg" alt="..." class="img-responsive">
+          <img src="assets/images/avengers.jpg" alt="..." class="img-responsive imgSaga">
           <div class="carousel-caption">
             <h1>Los Vengadores</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/images/harry-potter1.jpg" alt="..." class="img-responsive">
+          <img src="assets/images/harry-potter1.jpg" alt="..." class="img-responsive imgSaga">
           <div class="carousel-caption">
             <h1>Harry Potter</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/images/lordtheking.jpg" alt="..."  class="img-responsive">
+          <img src="assets/images/lordtheking.jpg" alt="..."  class="img-responsive imgSaga">
           <div class="carousel-caption">
-            <h1>Lord the King</h1>
+            <h1>Lord of the Rings</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="assets/images/the-hunger-games.jpg" alt="..." class="img-responsive">
+          <img src="assets/images/the-hunger-games.jpg" alt="..." class="img-responsive imgSaga">
           <div class="carousel-caption">
-            <h1>Los juegos del hambre</h1>
+            <h1>The hunger games</h1>
            </div>
         </div>
 
         <div class="item">
-          <img src="assets/images/x-men1.jpg" alt="..."  class="img-responsive">
+          <img src="assets/images/x-men1.jpg" alt="..."  class="img-responsive imgSaga">
           <div class="carousel-caption">
             <h1>X-men</h1>
           </div>
@@ -160,6 +172,7 @@
 
   <section class="container-fluid">
     <div class="row container-fluid">
+<<<<<<< HEAD
      <div class="col-md-10 col-md-offset-1 text-center log-in">
        <div class="thumbnail user">
          <img src="assets/images/star-wars2.jpg" alt="..." class="img-responsive">
@@ -168,6 +181,21 @@
             <div class="container-fluid start">
               <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
               <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>INICIO SESIÓN</strong></button>
+=======
+      <div class="col-md-10 col-md-offset-1 text-center entry">
+        <div class="thumbnail user">
+          <img src="assets/images/anuncioSaga.jpg" alt="..." class="img-responsive imgSagaStar">
+          <div class="caption row container-fluid">
+            <div class="col-md-12 start">
+              <!-- <h1>¿De que lado de la fuerza estás?</h1>
+              <h2>BIENVENIDO A LA COMUNIDAD SAGAFAN</h2> -->
+              <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
+              <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>INICIO SESIÓN</strong></button>
+              <p class="line"></p>
+              <p class="text-center">O ingresa con</p>
+              <a href="#"><i class="fa fa-facebook-official fa-2x" id="ico2Facebook" aria-hidden="true" href=""></i></a>
+              <a href="#"><i class="fa fa-google fa-2x" id="ico2Google" aria-hidden="true"></i></a>
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
             </div>
           </div>
         </div>
@@ -175,6 +203,7 @@
     </div>
   </section>
 
+<<<<<<< HEAD
   <footer>
     <div class="container-fluid">
      <div class="row">
@@ -215,6 +244,60 @@
          </ul>
      </div>
     </footer>
+=======
+  <!--Footer-->
+  <footer class="page-footer stylish-color-dark container-fluid">
+      <!--Footer Links-->
+    <div class="container-fluid">
+      <hr>
+              <!--First column-->
+              <div class="row text-footer">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <!--Social buttons-->
+                <a href="#"><i class="icons-footer fa fa-facebook icons" aria-hidden="true"></i></a>
+                <a href="#"><i class="icons-footer fa fa-twitter icono icons" aria-hidden="true"></i></a>
+                <a href="#"><i class="icons-footer fa fa-linkedin icons" aria-hidden="true"></i></a>
+                <a href="#"><i class="icons-footer fa fa-apple icons" aria-hidden="true"></i></a>
+                <a href="#"><i class="icons-footer fa fa-play icons" aria-hidden="true"></i></a>
+                </div>
+              <!--/.Social buttons-->
+              <!--/.First column-->
+              <!--Second column-->
+              <div class="text-footer col-md-6 col-lg-3 col-xs-6 mx-auto mt-3">
+                  <p><a href="work.html">Inicio</a></p>
+                  <p><a href="work.html">Acerca del sitio</a></p>
+                  <p><a href="work.html">Preguntas frecuentes</a></p>
+                  <p><a href="work.html">Terminos de uso</a></p>
+              </div>
+              <!--/.Second column-->
+              <div class="text-footer hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                  <p><a href="work.html">Contacto</a></p>
+                  <p><a href="work.html">Centro de ayuda</a></p>
+                  <p><a href="work.html">Privacidad</a></p>
+                  <p><a href="work.html">Cuenta</a></p>
+              </div>
+              <!--Third column-->
+                <div class="text-footer hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                  <p><a href="work.html">Formas de ver</a></p>
+                  <p><a href="work.html">Información corporativa</a></p>
+                  <p><a href="work.html">Cookies</a></p>
+              </div>
+          </div>
+          <!-- Footer links -->
+            <div class="row">
+            <!--Grid column-->
+              <div class="col-12 text-center row copyright">
+               <!--Copyright-->
+                <p class="text-center">© 2017 <a href="index.html">SAGAFAN</a> Todos los derechos reservados</p>
+               <!--/.Copyright-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+            </div>
+         </div>
+     </footer>
+  <!--/.Footer-->
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <!-- para utilizar firebase -->

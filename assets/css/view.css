@@ -1,0 +1,133 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+.logo{
+  width: 15%;
+}
+
+body {
+ background-color: #000;
+ font-family: 'Oswald', sans-serif;
+ font-size: 1.5em;
+ letter-spacing: .1em;
+}
+/*logo*/
+p {
+  text-align: justify;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+.navbar-default{
+  background-color: #011D28;
+  border-color: #011D28;
+}
+
+/*navegador usuario*/
+.imgUser {
+  width: 100px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #FFF;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+  color: #027feb;
+}
+.dropdown-menu {
+  width: 50%;
+  background-color: #011D28;
+}
+
+/*Estilo search*/
+#imaginary_container{
+  margin-top:2%; /* Don't copy this */
+}
+.stylish-input-group .input-group-addon{
+  background: white !important;
+}
+.stylish-input-group .form-control{
+  border-right:0;
+  box-shadow:0 0 0;
+  border-color:#ccc;
+}
+.stylish-input-group button{
+  border:0;
+  background:transparent;
+}
+
+/*Fin estilo search*/
+/*footer*/
+footer {
+ letter-spacing: .1em;
+ color: #FFF;
+}
+.text-footer p a {
+  text-align: justify;
+  color: #FFF;
+}
+.text-footer p a:hover {
+  text-align: justify;
+  color: #027feb;
+}
+.icons{
+  font-size: 2em;
+  margin-left: 20px;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+  color: #FFF;
+  font-size: 1.8em;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+  color: #027feb;
+}
+.copyright {
+  background-color: #011D28;
+  padding-top: 30px;
+}
+
+.text-footer p a:hover {
+  text-align: justify;
+  color: #22A1D3;
+  text-decoration: none;
+}
+
+
+/*Contenedor de información de la película*/
+
+.contInfo{
+  padding-top: 5%;
+}
+
+/*Botón ver película*/
+.btnVer {
+  background-color: #22A1D3;
+  font-size: 1.4em;
+  margin: 0 10px 0 10px;
+  color: #FFF;
+  margin-top: 3%;
+}
+
+.movie{
+  padding-top: 10%;
+}
+
+.contInfo, #parrafo{
+ Color: #FFF;
+}
+.listCalifica {
+  list-style: none;
+  color: #FFF;
+}
+
+.star {
+  color: yellow;
+  display: inline-block;
+}
+
+.mostrar {
+  display: none;
+}
+

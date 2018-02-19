@@ -1,22 +1,24 @@
 * {
-  margin: 0;
-  padding: 0;
+ margin: 0;
+ padding: 0;
 }
-
 body {
- background-color: #2D3E50;
- font-family: 'Oswald', sans-serif;
- font-size: 1.5em;
+  background-color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .1em;
 }
 p {
   text-align: justify;
 }
-.navbar-default{
-background-color: #008CBA;
-border-color: #008CBA;
-}
+/*Menu*/
+.navbar-default {
+  background-color: #011D28;
+  border-color: #011D28;
+  }
 .navbar-default .navbar-nav>li>a{
  color: #FFF;
+<<<<<<< HEAD
 }
 /*carousel*/
 .subTitle{
@@ -25,20 +27,86 @@ border-color: #008CBA;
 }
 .carousel-inner img {
   width: 100%;
-  background-position: center center;
-  background-repeat: non-repeat;
-  background-size: cover;
-}
+=======
+ }
 
-.carousel-inner {
- height: 80vh;
- margin-top: 10px;
+/*css de modales registro y login*/
+.text-center p {
+  text-align: center;
+}
+.modal-content {
+  background-color: #011D28;
+  color: #FFF;
+}
+.modal-user {
+  background-color: #011D28;
+  color: #FFF;
+}
+.close {
+  color: #FFF !important;
+  font-size: 3em;
+}
+.close:focus {
+  outline: none;
+}
+/*modal login*/
+.modal-user {
+  display: inline-block;
+  border: none;
+  background-color: #027feb;
+  font-size: 200%;
+}
+.btnLogin {
+  background-color: #027feb;
+}
+.fa-user-circle {
+  color: #011D28;
+  background: transparent;
+}
+.alertUser {
+  color: red !important;
+}
+.has-success .input-group-addon {
+  color: #027feb;
+  background-color:#99CDFF;
+  border-color: #027feb;
+}
+.has-success .form-control-feedback {
+  color: #027feb;
+}
+.btn-info {
+  color: #FFF;
+  background-color: #027feb;
+  border-color: #027feb;
+}
+/*slides*/
+.imgSaga {
+  width: 100% !important;
+  height: 100vh !important;
+}
+.subTitle {
+  color: #FFF;
+  padding: 1% 1%;
+}
+/*.carousel img {
+  width: 250vh;
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+.carousel-caption {
+  bottom: 50px;
+}
+.user {
+  background-color: #000;
+  border: none;
 }
 /*registry*/
-.log-in{
- padding-top: 10em;
- padding-bottom: 10em;
+.creaCuenta,.datosRegistro, .btnEviarRegistro {
+  margin-top: 3%;
 }
+<<<<<<< HEAD
 
 .start{
  margin-top: -70px;
@@ -51,14 +119,19 @@ border-color: #008CBA;
 
 .registry{
 margin-bottom: 20%;
+=======
+.registry {
+  margin-bottom: 20%;
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
 }
 
-.btnRegistry{
- background-color: #191970;
+.btnRegistry {
+ background-color: #027feb;
  font-size: 1.4em;
- margin: 10px;
+ margin: 0 10px 0 10px;
  color: #FFF;
 }
+<<<<<<< HEAD
 
 /*footer*/
 footer{
@@ -71,6 +144,49 @@ footer{
     font-weight:800;
     font-size:30px;
     width: 20%;
+=======
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:#027feb;
+    background-color: transparent;
+}
+.entry {
+ padding-top: 7em;
+ padding-bottom: 7em;
+}
+
+.start {
+ margin-top: -130px;
+ color: #FFF;
+ text-align: center;
+}
+/*footer*/
+footer {
+ letter-spacing: .1em;
+ color: #FFF;
+}
+.text-footer p a {
+  text-align: justify;
+  color: #FFF;
+}
+.text-footer p a:hover {
+  text-align: justify;
+  color: #027feb;
+}
+.icons{
+  font-size: 2em;
+  margin-left: 20px;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+  color: #FFF;
+  font-size: 1.8em;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+  color: #027feb;
+}
+.copyright {
+  background-color: #011D28;
+  padding-top: 30px;
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
 }
 
 .adress span , .menu span{
@@ -84,17 +200,16 @@ footer{
    font-size: 16px;
    letter-spacing: 3px;
 }
-
 .adress li a , .menu li a{
-    color:#FFF;
-    letter-spacing: 3px;
-    text-decoration:none;
-    font-size:12px;
+  color:#FFF;
+  letter-spacing: 3px;
+  text-decoration:none;
+  font-size:12px;
 }
 
 .adress li, .menu li{
-    margin-top: 5px;
-    list-style: none;
+  margin-top: 5px;
+  list-style: none;
 }
 
 .adress li a:hover , .menu li a:hover{
@@ -104,11 +219,17 @@ footer{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
-
-.fa{
-    color: #da3e44;
-    margin-right: 10px;
-    font-size:14px;
+.logo {
+  width: 25%;
+  /*padding-bottom: 1%;*/
+}
+.navbar-brand {
+  padding: 0;
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #22A1D3;
+    text-decoration: none;
 }
 
 /* .logo {

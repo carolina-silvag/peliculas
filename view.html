@@ -1,135 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Películas</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/found.css">
-</head>
-<body>
-  <nav class="navbar navbar-default nav">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand logo" href="#"></a>
-      </div>
-
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li ><a href="#tema4">Usuario</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <label class="control-label" for="searchinput">Búsqueda de películas</label>
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <div id="imaginary_container"> 
-=======
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Sagafan</title>
   <link rel="shortcut icon" href="assets/images/sagafan-logo.ico">
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/found.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/media-found.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/5star.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/view.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media-view.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-default nav navbar-fixed-top">
     <div class="container-fluid">
-      <!-- <div class="navbar-header"> -->
-        <a class="navbar-brand logo" href="movie.html"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
-     <!--  </div> -->
-      <ul class="nav navbar-nav navbar-right b">
-        <li class="ocultar"><a href="sagas.html">Mis Sagas</a></li>
+      <a class="navbar-brand logo" href="movie.html"><img class="img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sagas.html">Mis Sagas</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <div class="row">
               <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
               <div hidden id="user-name" class="col-md-8"></div>
+
             </div></a>
           <ul class="dropdown-menu" class="position-fixed">
             <li><a href="#">Perfil</a></li>
-            <li class="mostrar"><a href="#">Mis Sagas</a></li>
+            <li class="ocultar"><a href="#">Mis Sagas</a></li>
             <li><a href="#">Administrar Cuenta</a></li>
             <li><a href="#">Configurar Perfil</a></li>
             <li role="separator" class="divider"></li>
-            <li id="btnSignOut" class="btnmenu"><a href="#">Sign-out</a></li>
+            <li id="btnSignOut"><a href="#">Sign-out</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </nav>
-  <section>
+  <section class="movie">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 text-center separacion-search">
-          <label class="control-label busqueda" for="searchinput">Búsqueda de películas</label>
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="form-group">
->>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
-                <div class="input-group stylish-input-group input-append">
-                  <input type="text" class="form-control" id="search" placeholder="Título de película" >
-                  <span class="input-group-addon">
-                    <button type="submit" id="btnSearch">
-                      <span class="glyphicon glyphicon-search"></span>
-<<<<<<< HEAD
-                    </button>  
-=======
-                    </button>
->>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
-                  </span>
-                </div>
-              </div>
-            </div>
+        <div class="col-xs-4 col-xs-offset-1">
+          <img src="" id="choseImage" alt="..." class="img-thumbnail img-responsive">
+          <p id="parrafo"></p>
+          <button id="btnVerMovie" type="button" class="btn btn-light btnVer"><strong>Ver película</strong></button>
+        </div>
+        <div class="col-xs-6 col-xs-offset-1 contInfo">
+          <div class="form-group">
+            <span><strong>Título original:</strong></span>
+            <span id="title"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Director:</strong></span>
+            <span id="director"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Escritores:</strong></span>
+            <span id="writer"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Actores:</strong></span>
+            <span id="actors"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Producción:</strong></span>
+            <span id="production"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Año:</strong></span>
+            <span id="year"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Premios:</strong></span>
+            <span id="awards"></span>
+          </div>
+          <div class="form-group">
+            <span><strong>Tiempo de Duración:</strong></span>
+            <span id="runtime"></span>
           </div>
         </div>
+        <!-- <div class="row">
+          <div class="col-xs-12"> -->
+            <h3 class="text-center listCalifica">Califica</h3>
+            <hr />
+            <ul class="rate-area text-center">
+              <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Amazing">5 stars</label>
+              <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>
+              <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Average">3 stars</label>
+              <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
+              <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
+            </ul>
+          <!-- </div>
+        </div> -->
       </div>
-    </div>
-  </section>
-<<<<<<< HEAD
-
-=======
-  <section>
-    <div class="container">
-      <div class="row">
-        <form class="col-xs-12 form-inline text-center">
-          <div class="form-group">
-            <label class="label-search" for="startDate">Director</label>
-            <input type="text" class="form-control" id="startDate" placeholder="Ej. George Lucas">
-          <div class="form-group">
-            <label class="label-search" for="endDate">Idioma</label>
-            <input type="text" class="form-control" id="language" placeholder="Ej. Español">
-          </div>
-            <div class="form-group">
-              <label class="label-search" for="orderBy">Año</label>
-              <select class="form-control" id="yearCombobox">
-              </select>
-            </div>
-          </div>
-          <button type="button" class="btn btn-default" id='btnFilter'>Busar</button>
-        </form>
-      </div>
-    </div>
-
-    <div id="listMovie">
-
     </div>
   </section>
   <!--Footer-->
@@ -184,20 +148,11 @@
          </div>
      </footer>
   <!--/.Footer-->
->>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <!-- para utilizar firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<<<<<<< HEAD
-  <!-- API OMDb-->
-  <script src="http://www.omdbapi.com/?apikey=[yourkey]&"></script>
-  <script src="assets/js/app.js"></script>
-</body>
-</html>
-=======
 
-  <script src="assets/js/movieTitle.js"></script>
+  <script src="assets/js/view.js"></script>
 </body>
 </html>
->>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f

@@ -1,32 +1,4 @@
-
 var config = {
-<<<<<<< HEAD
-    apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
-    authDomain: "peliculas-999a3.firebaseapp.com",
-    databaseURL: "https://peliculas-999a3.firebaseio.com",
-    projectId: "peliculas-999a3",
-    storageBucket: "peliculas-999a3.appspot.com",
-    messagingSenderId: "918922040142"
-  };
-  firebase.initializeApp(config);
-
-
-
-// Configura accesos directos a las características de Firebase e inicia la autenticación de base de firebase.
-  this.auth = firebase.auth();
-  this.database = firebase.database();
-  console.log(this.auth.currentUser);
-
-  this.storage = firebase.storage();
-  // this.store = firebase.storage();
-
-  /*this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));*/
-
-
-
-  var userPic = $('#user-pic').val();
-  var userName = $('#user-name').val();
-=======
   apiKey: "AIzaSyCfxD0tkJbQDTjNNPQe-fK79p_V0TUoWvY",
   authDomain: "peliculas-999a3.firebaseapp.com",
   databaseURL: "https://peliculas-999a3.firebaseio.com",
@@ -39,6 +11,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 var auth = firebase.auth();
 var currentUser = null;
+var movieData = null;
 
 auth.onAuthStateChanged(function(user) {
   if (user) {
@@ -46,7 +19,7 @@ auth.onAuthStateChanged(function(user) {
     loadCurrentUser(user.uid);
   } else {
     // No usuario logueado.
-   //window.location.href = 'index.html';
+    /*window.location.href = 'index.html';*/
   }
 });
 
@@ -63,12 +36,12 @@ function loadCurrentUser(uid) {
       src: user.photoURL
     });
     divUserPic.removeAttr('hidden');
+    myMovies(uid);
   });
 }
 
 
->>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
-  $('#btnSignOut').click(signOut);
+$('#btnSignOut').click(signOut);
 
 function signOut() {
   currentUser;
@@ -90,60 +63,37 @@ function signOut() {
   window.location.href = 'index.html';
 }
 
-/*buscar por titulo*/
-$('#terror1').click(search2);
-$('#btnSearch').click(search);
-function search() {
-  window.location.href = 'found.html?search='+$('#search').val();
+function myMovies (uid) {
+  console.log('buscando peliculas para ', uid);
+  database.ref('/sagas/'+uid).on("value", function(data) {
+    var movies = data.val();
+    console.log(movies);
+  });
 }
-
-function search2() {
-  window.location.href = 'found.html?search='+'saw';
-}
-
-
-/*carrusel*/
-
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
   interval: false
 });
 
-
-// para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
-// Haz lo mismo para el próximo, siguiente artículo.
-/*$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-});*/
-
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
 $('.multi-item-carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
   }
   next.children(':first-child').clone().appendTo($(this));
-
+  
   if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
-
+    
     if (next.next().next().length > 0) {
           next.next().next().children(':first-child').clone().appendTo($(this));
      } else {
        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
      }
   } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
-
+  
 });
-

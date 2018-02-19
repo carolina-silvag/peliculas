@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Sagafan</title>
+  <link rel="shortcut icon" href="assets/images/sagafan-logo.ico">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/sagas.css">
+</head>
+<body>
+  <nav class="navbar navbar-default nav navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- <div class="navbar-header"> -->
+        <a class="navbar-brand logo" href="movie.html"><img class="logo img img-responsive" src="assets/images/sagafan-celeste.png" alt=""></a>
+     <!--  </div> -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="ocultar"><a href="sagas.html">Mis Sagas</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="row">
+              <div hidden id="user-pic" class="foto col-md-3"><img src="" alt="Responsive image" class="img img-responsive img-circle imgUser"></div>
+              <div hidden id="user-name" class="col-md-8"></div>
+            </div></a>
+          <ul class="dropdown-menu" class="position-fixed">
+            <li><a href="#">Perfil</a></li>
+            <li class="mostrar"><a href="#">Mis Sagas</a></li>
+            <li><a href="#">Administrar Cuenta</a></li>
+            <li><a href="#">Configurar Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li id="btnSignOut" class="btnmenu"><a href="#">Sign-out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 title-sagas">
+          <h2 class="text-center">Sagas Preferidas</h2>
+        </div>
+      </div>
+</section>
+<!--Footer-->
+<footer class="page-footer stylish-color-dark container-fluid">
+    <!--Footer Links-->
+  <div class="container-fluid">
+    <hr>
+            <!--First column-->
+            <div class="row text-footer">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <!--Social buttons-->
+              <a href="#"><i class="icons-footer fa fa-facebook icons" aria-hidden="true"></i></a>
+              <a href="#"><i class="icons-footer fa fa-twitter icono icons" aria-hidden="true"></i></a>
+              <a href="#"><i class="icons-footer fa fa-linkedin icons" aria-hidden="true"></i></a>
+              <a href="#"><i class="icons-footer fa fa-apple icons" aria-hidden="true"></i></a>
+              <a href="#"><i class="icons-footer fa fa-play icons" aria-hidden="true"></i></a>
+              </div>
+            <!--/.Social buttons-->
+            <!--/.First column-->
+            <!--Second column-->
+            <div class="text-footer col-md-6 col-lg-3 col-xs-6 mx-auto mt-3">
+                <p><a href="index.html">Inicio</a></p>
+                <p><a href="work.html">Acerca del sitio</a></p>
+                <p><a href="work.html">Preguntas frecuentes</a></p>
+                <p><a href="work.html">Terminos de uso</a></p>
+            </div>
+            <!--/.Second column-->
+            <div class="text-footer hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                <p><a href="work.html">Contacto</a></p>
+                <p><a href="work.html">Centro de ayuda</a></p>
+                <p><a href="work.html">Privacidad</a></p>
+                <p><a href="work.html">Cuenta</a></p>
+            </div>
+            <!--Third column-->
+              <div class="text-footer hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-3 mx-auto mt-3">
+                <p><a href="work.html">Formas de ver</a></p>
+                <p><a href="work.html">Información corporativa</a></p>
+                <p><a href="work.html">Cookies</a></p>
+            </div>
+        </div>
+        <!-- Footer links -->
+          <div class="row">
+          <!--Grid column-->
+            <div class="col-12 text-center row copyright">
+             <!--Copyright-->
+              <p class="text-center">© 2017 <a href="index.html">SAGAFAN</a> Todos los derechos reservados</p>
+             <!--/.Copyright-->
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+          </div>
+       </div>
+   </footer>
+<!--/.Footer-->
+
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+ 	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ 	<!-- para utilizar firebase -->
+ 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="assets/js/sagas.js"></script>
+</body>
+</html>

@@ -1,18 +1,197 @@
+<<<<<<< HEAD
 /*Estilo search*/
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Logo nav  */
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: #027feb;
+}
+.dropdown-menu {
+    width: 50%;
+    background-color: #011D28;
+}
+
+/*Estilo search*/
+.label-search {
+    color: #FFF;
+}
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
 #imaginary_container{
     margin-top:2%; /* Don't copy this */
 }
 .stylish-input-group .input-group-addon{
+<<<<<<< HEAD
     background: white !important; 
 }
 .stylish-input-group .form-control{
     border-right:0; 
   box-shadow:0 0 0; 
   border-color:#ccc;
+=======
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
 }
 .stylish-input-group button{
     border:0;
     background:transparent;
 }
 
+<<<<<<< HEAD
 /*Fin estilo search*/
+=======
+/*Fin estilo search*/
+
+/* Inicio estilos de la pagina */
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}
+/*logo*/
+p {
+    text-align: justify;
+}
+.logo {
+    width: 20%;
+  /*padding-bottom: 1%;*/
+}
+.navbar-default{
+    background-color: #011D28;
+    border-color: #011D28;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #FFF;
+}
+/*carousel*/
+.subTitle{
+    color: #FFF;
+    padding-bottom: 1%;
+}
+/* Fin estilos de la pagina */
+
+.imgUser {
+    width: 100px;
+}
+/*seccion de peliculas*/
+.listMovie {
+    margin: 2em;
+}
+.busqueda {
+  color: #FFF;
+}
+.separacion-search {
+  padding-top: 8%;
+}
+.portafolio-contenedor {
+    -webkit-transition:all .9s ease;
+    -moz-transition:all .9s ease;
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease;
+    width:100%;
+}
+.portafolio-contenedor:hover {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.portafolio {
+    overflow:hidden;
+}
+
+/*efecto de nombres peliculas de las imagenes*/
+.nameList {
+    color: red;
+    height: 75vh;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer*/
+footer {
+    letter-spacing: .1em;
+    color: #FFF;
+}
+.text-footer p a {
+    text-align: justify;
+    color: #FFF;
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #027feb;
+}
+.icons{
+    font-size: 2em;
+    margin-left: 20px;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+    color: #FFF;
+    font-size: 1.8em;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-apple:hover, .fa-play:hover   {
+    color: #027feb;
+}
+.copyright {
+    background-color: #011D28;
+    padding-top: 30px;
+}
+.adress span , .menu span{
+   color: #FFF;
+   font-weight: 800;
+   border-bottom: 1px solid #c7c7c7;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 3px;
+}
+
+.adress li a , .menu li a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.adress li, .menu li{
+    margin-top: 5px;
+    list-style: none;
+}
+
+.adress li a:hover , .menu li a:hover{
+    color: #da3e44;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.logo {
+  width: 40%;
+  /*padding-bottom: 1%;*/
+}
+.navbar-brand {
+    padding: 0;
+}
+.text-footer p a:hover {
+    text-align: justify;
+    color: #22A1D3;
+    text-decoration: none;
+}
+
+.mostrar {
+  display: none;
+}
+>>>>>>> caa6d621979111ba694bd99f868dfb06a1350f5f
