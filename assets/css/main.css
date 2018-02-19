@@ -19,9 +19,9 @@ border-color: #008CBA;
  color: #FFF;
 }
 /*carousel*/
-.title h3{
+.subTitle{
  color: #FFF;
- text-align: center;
+ padding-bottom: 1%;
 }
 .carousel-inner img {
   width: 100%;
@@ -39,9 +39,17 @@ border-color: #008CBA;
  padding-top: 10em;
  padding-bottom: 10em;
 }
+
+.start{
+ margin-top: -70px;
+}
+
+.user{
+ background-color: #2D3E50;
+ border: 0px solid #2D3E50;
+}
+
 .registry{
-border-radius: 10%;
-position: absolute;
 margin-bottom: 20%;
 }
 
@@ -50,12 +58,9 @@ margin-bottom: 20%;
  font-size: 1.4em;
  margin: 10px;
  color: #FFF;
- position:relative;
- top: 540px;
- left: 450px;
 }
 
-
+/*footer*/
 footer{
      background-color: #000;
      padding:30px 0px;
@@ -65,6 +70,7 @@ footer{
     color:#FFF;
     font-weight:800;
     font-size:30px;
+    width: 20%;
 }
 
 .adress span , .menu span{
@@ -104,3 +110,9 @@ footer{
     margin-right: 10px;
     font-size:14px;
 }
+
+/* .logo {
+ background-image: url(../images/sagafan-dark.png);
+ width: 10%;
+ z-index: 1;
+} */

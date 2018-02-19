@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Películas</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/found.css">
+</head>
+<body>
+  <nav class="navbar navbar-default nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#"></a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#tema4">Usuario</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <label class="control-label" for="searchinput">Búsqueda de películas</label>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group input-append">
+                  <input type="text" class="form-control" id="search" placeholder="Título de película" >
+                  <span class="input-group-addon">
+                    <button type="submit" id="btnSearch">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <!-- para utilizar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- API OMDb-->
+  <script src="http://www.omdbapi.com/?apikey=[yourkey]&"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

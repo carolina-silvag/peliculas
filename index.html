@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/media.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand logo" href="#"></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="assets/images/sagafan-dark.png" alt=""></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,6 +61,9 @@
                 <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
               </div>
               <button type="button" class="btn btn-defaut" id="btnLogin">LOG-IN</button>
+              <p class="line"> O ingresa con </p>
+              <a href="#"><i class="fa fa-facebook-official fa-2x" id="icoFacebook" aria-hidden="true" href=""></i></a>
+              <a href="#"><i class="fa fa-google fa-2x" id="icoGoogle" aria-hidden="true"></i></a>
               <p class="recoverPassword">Forgot password? <a href="#">Click Here</a></p>
             </form>
           </div>
@@ -91,15 +95,7 @@
   </header>
 
   <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title">
-            <h3>SAGAS MÁS VISTAS</h3>
-         </div>
-        </div>
-      </div>
-    </div>
+    <h3 class="text-center subTitle">SAGAS MÁS VISTAS</h3>
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -162,63 +158,62 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 log-in">
-           <img src="assets/images/star-wars2.jpg" alt="" class="img-responsive">
-        </div>
-           <div class="col-md-12 registry">
-            <div class="container-fluid">
-             <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
-             <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>INICIO SESIÓN</strong></button>
-             <p class="line"> O ingresa con </p>
-             <a href="#"><i class="fa fa-facebook-official fa-2x" id="icoFacebook" aria-hidden="true" href=""></i></a>
-             <a href="#"><i class="fa fa-google fa-2x" id="icoGoogle" aria-hidden="true"></i></a>
+  <section class="container-fluid">
+    <div class="row container-fluid">
+     <div class="col-md-10 col-md-offset-1 text-center log-in">
+       <div class="thumbnail user">
+         <img src="assets/images/star-wars2.jpg" alt="..." class="img-responsive">
+         <div class="caption">
+           <div class="col-md-12">
+            <div class="container-fluid start">
+              <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalSign-up"><strong>REGISTRATE</strong></button>
+              <button type="button" class="btn btn-light btnRegistry" data-toggle="modal" data-target="#modalLog-in"><strong>INICIO SESIÓN</strong></button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container-fluid">
      <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <span class="logo">LOGO</span>
-              </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <span class="logo">LOGO</span>
+      </div>
 
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                  <ul class="menu">
-                       <span>Menu</span>
-                       <li>
-                          <a href="#">Home</a>
-                        </li>
-                        <li>
-                           <a href="#">About</a>
-                        </li>
-                        <li>
-                          <a href="#">Blog</a>
-                        </li>
-                        <li>
-                           <a href="#">Gallery </a>
-                        </li>
-                   </ul>
-              </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="menu">
+               <span>Menu</span>
+               <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                   <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                   <a href="#">Gallery </a>
+                </li>
+           </ul>
+      </div>
 
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <ul class="adress">
-                      <span>Contact</span>
-                      <li>
-                         <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
-                      </li>
-                      <li>
-                         <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
-                      </li>
-                      <li>
-                         <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
-                      </li>
-                 </ul>
-             </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="adress">
+              <span>Contact</span>
+              <li>
+                 <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
+              </li>
+              <li>
+                 <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
+              </li>
+              <li>
+                 <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
+              </li>
+         </ul>
+     </div>
     </footer>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
